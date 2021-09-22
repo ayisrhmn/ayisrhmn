@@ -13,6 +13,10 @@ sometimes i also like to play games and watch movies.
 
 ### Let's connect!
 <p>
-    <a href="https://linkedin.com/in/ayisrhmn/" target="blank"><img src="https://img.shields.io/badge/Muhammad_Fariz_Rahman-30302f?style=blue&logo=linkedin" /></a>
-    <a href="https://instagram.com/ayisrhmn/" target="blank"><img src="https://img.shields.io/badge/Muhammad_Fariz_Rahman-30302f?style=flat&logo=instagram" /></a>
+    <a href="https://linkedin.com/in/ayisrhmn/" target="blank">
+        <img src="https://img.shields.io/badge/Muhammad_Fariz_Rahman-30302f?style=flat&logo=linkedin" />
+    </a>
+    <a href="https://instagram.com/ayisrhmn/" target="blank">
+        <img src="https://img.shields.io/badge/Muhammad_Fariz_Rahman-30302f?style=flat&logo=instagram" />
+    </a>
 </p>
