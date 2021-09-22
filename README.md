@@ -1,14 +1,18 @@
 # Hi there 👋 , I'm Fariz!
-UI Engineer.
+<p>
+    UI Engineer.
+</p>
 
-i write code for the user interface of a website or mobile application.
-skilled in frontend development with React or Vue and mobile application development with React Native or Flutter.
-sometimes i also like to play games and watch movies.
+<p>
+    i write code for the user interface of a website or mobile application.<br />
+    skilled in frontend development with React or Vue and mobile application development with React Native or Flutter.<br />
+    sometimes i also like to play games and watch movies.
+</p>
 
 ### Stats:
 <p>
-    <img src="https://github-readme-stats.vercel.app/api?username=ayisrhmn&hide=contribs,prs&show_icons=true&hide_border=true&title_color=000" />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ayisrhmn&layout=compact" height=180 />
+    <img src="https://github-readme-stats.vercel.app/api?username=ayisrhmn&hide=contribs&hide_border=true&theme=onedark&border_radius=10" height=150 />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ayisrhmn&layout=compact&hide_border=true&theme=onedark&border_radius=10" height=150 />
 </p>
 
 ### Let's connect!
