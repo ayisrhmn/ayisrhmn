@@ -1,5 +1,9 @@
 # Hi there 👋 , I'm Fariz!
 <p>
+    he/him.
+</p>
+
+<p>
     UI Engineer.
 </p>
 
