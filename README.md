@@ -4,7 +4,8 @@
 </p>
 
 <p>
-    i write code for the user interface of a website or mobile application.<br />
+    writing code is my ninja way.
+    i write code for the user interface of a website or mobile app.<br />
     skilled in frontend development with React or Vue and mobile application development with React Native or Flutter.<br />
     sometimes i also like to play games and watch movies.
 </p>
