@@ -4,9 +4,9 @@
 </p>
 
 <p>
-    writing code is my ninja way.
+    writing code is my ninja way.<br />
     i write code for the user interface of a website or mobile app.<br />
-    skilled in frontend development with React or Vue and mobile application development with React Native or Flutter.<br />
+    skilled in frontend development with React or Vue and mobile app development with React Native or Flutter.<br />
     sometimes i also like to play games and watch movies.
 </p>
 
