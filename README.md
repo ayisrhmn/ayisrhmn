@@ -14,7 +14,7 @@
     sometimes i also like to play games and watch movies.
 </p>
 
-### Stats:
+### My stats:
 <p>
     <img src="https://github-readme-stats.vercel.app/api?username=ayisrhmn&hide=contribs&hide_border=true&theme=onedark&border_radius=10" height=150 />
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ayisrhmn&layout=compact&hide_border=true&theme=onedark&border_radius=10" height=150 />
