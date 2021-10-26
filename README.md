@@ -9,7 +9,7 @@
 
 <p>
     I write code for the user interface of a website or mobile app.<br />
-    Skilled in frontend development with React or Vue and mobile app development with React Native or Flutter.<br />
+    Skilled in front-end development with React or Vue and mobile app development with React Native or Flutter.<br />
 </p>
 
 ### My stats:
