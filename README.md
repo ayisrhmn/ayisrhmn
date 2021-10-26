@@ -4,7 +4,7 @@
 </p>
 
 <p>
-    Hi, I'm Muhammad Fariz Rahman, an UI Engineer.
+    Hi, I'm Muhammad Fariz Rahman, an Front-End & Mobile App Developer.
 </p>
 
 <p>
