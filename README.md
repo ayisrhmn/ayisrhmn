@@ -1,8 +1,4 @@
-# Hi there 👋 , I'm Fariz!
-<p>
-    he/him.
-</p>
-
+# Hi there 👋
 <p>
     Hi, I'm Muhammad Fariz Rahman, an Front-End & Mobile App Developer.
 </p>
