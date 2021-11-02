@@ -1,11 +1,11 @@
 # Hi there 👋
 <p>
-    Hi, I'm Muhammad Fariz Rahman, an Front-End & Mobile App Developer.
+    Hello, I'm Fariz. I'm a Front-End & Mobile App Dev Ninja.
 </p>
 
 <p>
-    I write code for the user interface of a website or mobile app.<br />
-    Skilled in front-end development with React or Vue and mobile app development with React Native or Flutter.<br />
+    Enthusiastic Software Engineer with Front-End and Mobile Application Development.<br />
+    Skilled in Front-End Dev with React Js or Vue Js and Mobile App Dev with React Native or Flutter.<br />
 </p>
 
 ### My stats:
