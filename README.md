@@ -1,12 +1,12 @@
 # Hi there 👋, i'm Fariz!
 <p>
-    I'm a Fullstack Javascript Ninja<br />
-    Now, i working as a Frontend Engineer at <a href="https://www.kanosolution.com/" target="_blank">Kano Solution</a>
+    • Fullstack Javascript Ninja<br />
+    • Enthusiastic Software Engineer with Javascript languange or framework<br />
+    • Now i'm playing with React.js, React Native and Node.js (Express.js)
 </p>
 
 <p>
-    Enthusiastic Software Engineer with Javascript languange or framework<br />
-    Now i'm playing with React.js, React Native and Node.js (Express.js)<br />
+    I'm currently working as a Frontend Engineer at <a href="https://www.kanosolution.com/" target="_blank">Kano Solution</a>.<br />
 </p>
 
 ### My stats:
