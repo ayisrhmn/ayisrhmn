@@ -1,6 +1,7 @@
 # Hi there 👋, i'm Fariz!
 <p>
-    I'm a Fullstack Javascript Ninja.
+    I'm a Fullstack Javascript Ninja<br />
+    Now, i working as Frontend Engineer at <a href="https://www.kanosolution.com/">Kano Solution</a>
 </p>
 
 <p>
