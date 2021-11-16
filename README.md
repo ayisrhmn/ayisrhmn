@@ -1,6 +1,6 @@
-# Hi there 👋
+# Hi there 👋, i'm Fariz!
 <p>
-    Hello, I'm Fariz. I'm a Fullstack Javascript Ninja.
+    I'm a Fullstack Javascript Ninja.
 </p>
 
 <p>
