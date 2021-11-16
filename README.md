@@ -1,11 +1,11 @@
 # Hi there 👋
 <p>
-    Hello, I'm Fariz. I'm a Front-End & Mobile App Dev Ninja.
+    Hello, I'm Fariz. I'm a Fullstack Javascript Ninja.
 </p>
 
 <p>
-    Enthusiastic Software Engineer with Front-End and Mobile Application Development.<br />
-    Skilled in Front-End Dev with React Js or Vue Js and Mobile App Dev with React Native or Flutter.<br />
+    Enthusiastic Software Engineer with Javascript languange or framework.<br />
+    Now i'm playing with React.js, React Native and Node.js (Express.js).<br />
 </p>
 
 ### My stats:
