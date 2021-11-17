@@ -1,5 +1,9 @@
 # Hi there 👋, i'm Fariz!
 <p>
+    He/Him
+</p>
+
+<p>
     • Fullstack Javascript Ninja<br />
     • Enthusiastic Software Engineer with Javascript languange or framework<br />
     • Now i'm playing with React.js, React Native and Node.js (Express.js)
