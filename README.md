@@ -4,9 +4,9 @@
 </p>
 
 <p>
-    • Fullstack Javascript Ninja<br />
-    • Enthusiastic Software Engineer with Javascript languange or framework<br />
-    • Now i'm playing with React.js, React Native and Node.js (Express.js)
+    I'm a Frontend & Mobile Dev Ninja with strong passion to learn new things.<br />
+    I'm familiar with several frameworks including React.js, React Native, Flutter<br />
+    and I also have knowledge with Laravel, Node.js (Express.js) for backend and MySQL, Firebase, MongoDB for database.
 </p>
 
 <p>
