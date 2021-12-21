@@ -20,10 +20,7 @@
 
 ### Let's connect!
 <p>
-    <a href="https://linkedin.com/in/ayisrhmn/" target="blank">
-        <img src="https://img.shields.io/badge/Muhammad_Fariz_Rahman-30302f?style=flat&logo=linkedin" />
-    </a>
-    <a href="https://instagram.com/ayisrhmn/" target="blank">
-        <img src="https://img.shields.io/badge/Muhammad_Fariz_Rahman-30302f?style=flat&logo=instagram" />
+    <a href="https://linktr.ee/ayisrhmn" target="blank">
+        <img src="https://img.shields.io/badge/linktr.ee/ayisrhmn-30302f?style=flat&logo=linktree" />
     </a>
 </p>
