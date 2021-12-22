@@ -4,7 +4,7 @@
 </p>
 
 <p>
-    I'm a Frontend & Mobile Dev Ninja with strong passion to learn new things.<br />
+    I'm a Frontend Dev Ninja with strong passion to learn new things.<br />
     I'm familiar with several frameworks including React.js, React Native, Flutter and I also have knowledge with Laravel, Node.js (Express.js) for backend and MySQL, Firebase, MongoDB for database.
 </p>
 
