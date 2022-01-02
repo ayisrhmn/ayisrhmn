@@ -21,10 +21,7 @@
 
 ### Let's connect!
 <p>
-    <a href="https://linkedin.com/in/ayisrhmn" target="_blank">
-        <img src="https://img.shields.io/badge/LinkedIn-30302f?style=flat&logo=linkedin" />
-    </a>
-    <a href="https://instagram.com/ayisrhmn" target="_blank">
-        <img src="https://img.shields.io/badge/Instagram-30302f?style=flat&logo=instagram" />
+    <a href="https://linktr.ee/ayisrhmn" target="_blank">
+        <img src="https://img.shields.io/badge/@ayisrhmn | Linktree-30302f?style=flat&logo=linktree" />
     </a>
 </p>
