@@ -1,12 +1,9 @@
 # Hi there 👋, i'm Fariz!
-<p>
-    He/Him
-</p>
 
 <p>
-    I'm a Frontend Dev Ninja with strong passion to learn new things.<br />
-    I'm familiar with several frameworks including React.js, React Native, Flutter<br />
-    and I also have knowledge with Laravel, Node.js (Express.js) for backend and MySQL, Firebase, MongoDB for database.
+    I'm a Frontend Enthusiast, with over 5 years experience and strong passion to learn new things.<br />
+    I'm familiar with several frameworks including React.js, Next.js, Vue.js, React Native, Flutter<br />
+    and I also have knowledge with Laravel, Node.js, Express.js for backend and MySQL, Firebase, MongoDB for database.
 </p>
 
 <p>
