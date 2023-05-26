@@ -17,7 +17,7 @@
 
 ### Let's connect!
 <p>
-    <a href="https://linktr.ee/ayisrhmn" target="_blank">
-        <img src="https://img.shields.io/badge/@ayisrhmn | Linktree-30302f?style=flat&logo=linktree" />
+    <a href="https://ayisdev.my.id" target="_blank">
+        <img src="https://img.shields.io/badge/Visit%20%7C%20Ayisdev.my.id-30302f?style=flat&logo=Google-chrome&logoColor=white" />
     </a>
 </p>
