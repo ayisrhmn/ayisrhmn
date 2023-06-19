@@ -4,9 +4,8 @@ I'm a Software Engineer (FE) & Fullstack JavaScript enthusiast, with over 5 year
 
 Currently i'm working with React Native, Next.js, Nuxt.js, Express.js, Nest.js, MySQL & MongoDB. I'm also familiar with Flutter, Laravel & Firebase.
 
-## My stats:
 <div>
-    <img src="https://github-readme-stats.vercel.app/api?username=ayisrhmn&hide=contribs&hide_border=true&theme=onedark&border_radius=10" height=150 />
+<!--     <img src="https://github-readme-stats.vercel.app/api?username=ayisrhmn&hide=contribs&hide_border=true&theme=onedark&border_radius=10" height=150 /> -->
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ayisrhmn&layout=compact&hide_border=true&theme=onedark&border_radius=10" height=150 />
 </div>
 
