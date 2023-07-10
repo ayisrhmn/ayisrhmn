@@ -1,8 +1,6 @@
 # Hi there 👋, i'm Fariz!
 
-I'm a Software Engineer (FE) & Fullstack JavaScript enthusiast, with over 5 years experience & strong passion to learn new things.
-
-Currently i'm working with React Native, Next.js, Nuxt.js, Express.js, Nest.js, MySQL & MongoDB. I'm also familiar with Flutter, Laravel & Firebase.
+A passionate Frontend Engineer with 5+ years experiences. Defined as creative thinker, highly motivated, good communication and fast learner. Experienced and deep in JavaScript, especially React.js, React Native, Next.js, Vue.js, Nuxt.js
 
 <div>
 <!--     <img src="https://github-readme-stats.vercel.app/api?username=ayisrhmn&hide=contribs&hide_border=true&theme=onedark&border_radius=10" height=150 /> -->
