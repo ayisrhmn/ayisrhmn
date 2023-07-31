@@ -1,13 +1,16 @@
 # 👋 Hello, I'm Fariz
 
-Talented Software Developer, experienced in producing a high-quality products. Specializing in JavaScript and diverse frameworks like React and Vue.
+Highly motivated and skilled Software Developer with a passion for building innovative applications.
+Specializing in JavaScript and diverse frameworks like React.js, Vue.js, etc.
 
 ## 🛠️ Skills
 
-- JavaScript, TypeScript
-- Frontend Frameworks: React.js, React Native, Next.js, Vue.js, Nuxt.js
-- Backend: Node.js, Express, Nest.js, Laravel
-- Databases: MongoDB, MySQL
+- Programming Languages: JavaScript, TypeScript, PHP
+- Frontend Frameworks: React.js, Next.js, Vue.js, Nuxt.js
+- Mobile App Framework: React Native
+- Backend Frameworks: Node.js, Express.js, Nest.js, Laravel
+- State Management: Overmind
+- Database Management: MongoDB, PostgreSQL, MySQL
 - Version Control: Git
 
 ## 🔗 Let's Connect
