@@ -21,6 +21,4 @@ Specializing in JavaScript and diverse frameworks like React.js, Vue.js, etc.
 
 ## 📈 GitHub Stats
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=ayisrhmn&show_icons=true&theme=dracula)
-
 ![GitHub Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=ayisrhmn&theme=dracula&langs_count=6&layout=donut)
