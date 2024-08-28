@@ -1,6 +1,6 @@
 # 👋 Hello, I'm Fariz
 
-Highly motivated and skilled Software Developer with a passion for building innovative applications.
+Highly motivated and skilled Software Engineer with a passion for building innovative applications.
 Specializing in JavaScript and diverse frameworks like React.js, Next.js, etc.
 
 ## 🛠️ Skills
