@@ -16,7 +16,7 @@ Specializing in JavaScript and diverse frameworks like React.js, Next.js, etc.
 ## 🔗 Let's Connect
 
 - 📧 farizrahman30@gmail.com
-- 🌐 [Personal Site](https://ayisdev.my.id)
+- 🌐 [Personal Site](https://linktr.ee/ayisrhmn)
 - 👔 [LinkedIn](https://www.linkedin.com/in/ayisrhmn/)
 
 ## 📈 GitHub Stats
