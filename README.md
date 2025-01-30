@@ -7,9 +7,9 @@ Specializing in JavaScript and diverse frameworks like React.js, Next.js, etc.
 
 - Programming Languages: JavaScript, TypeScript
 - Frontend Frameworks: React.js, Next.js, Vue.js, Nuxt.js
-- Mobile App Framework: React Native, Ionic
-- Backend Frameworks: Node.js, Express.js
-- State Management: Overmind, Redux
+- Mobile App Framework: Ionic, React Native
+- Backend Frameworks: Nest.js, Express.js
+- State Management: Redux, Overmind
 - Database Management: MongoDB, PostgreSQL, MySQL
 - Version Control: Git
 
