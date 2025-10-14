@@ -17,13 +17,17 @@ export function Contact() {
           <CardContent className="space-y-4">
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild className="gap-2">
-                <a href="mailto:hello@example.com">
+                <a href="mailto:farizrahman30@gmail.com">
                   <EnvelopeSimpleIcon className="w-5 h-5" />
                   Email Me
                 </a>
               </Button>
               <Button size="lg" variant="outline" asChild className="gap-2 bg-transparent">
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://linkedin.com/in/ayisrhmn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <ChatIcon className="w-5 h-5" />
                   LinkedIn
                 </a>

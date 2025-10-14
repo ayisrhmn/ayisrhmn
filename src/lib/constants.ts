@@ -1,30 +1,63 @@
+export const ABOUT_US = `
+I'm **Muhammad Fariz Rahman** — a Senior Frontend Engineer based in Indonesia.
+
+I’m passionate about crafting accessible, fast, and visually refined interfaces that balance clean design with solid engineering. Over the past **7+ years**, I’ve focused on building seamless experiences across web and mobile using **React**, **Next.js**, and **Ionic**, while occasionally exploring **React Native** and **Nuxt**.
+
+Though my main expertise lies in frontend, I’ve also worked with **Express**, **Fastify**, and **NestJS** on personal projects, along with databases like **MySQL**, **PostgreSQL**, and **MongoDB** — giving me a broader understanding of full-stack workflows and system design.
+
+My approach to development combines **attention to detail**, **performance**, and **usability**, ensuring that every product I work on feels intuitive, reliable, and built to last.
+
+When I’m not coding, I usually spend my time learning new web technologies, refining side projects, or catching up with games and chill playlists.
+`;
+
 export const EXPERIENCES = [
   {
-    period: "2024 — PRESENT",
-    title: "Senior Frontend Engineer, Accessibility",
-    company: "TechCorp",
-    link: "https://techcorp.com",
-    description:
-      "Building and maintaining critical components used to construct TechCorp's frontend, across products. Working with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility.",
-    skills: ["JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS", "Accessibility"],
-  },
-  {
-    period: "2022 — 2024",
-    title: "Frontend Engineer",
-    company: "StartupXYZ",
-    link: "https://startupxyz.com",
-    description:
-      "Developed and maintained frontend features for a SaaS platform. Collaborated with design team to implement responsive and accessible UI/UX. Optimized application performance and improved developer experience.",
-    skills: ["React", "TypeScript", "Redux", "Styled Components", "Jest", "Storybook"],
-  },
-  {
-    period: "2020 — 2022",
+    period: "May 2024 — Present",
     title: "Frontend Developer",
-    company: "Digital Agency",
-    link: "https://digitalagency.com",
-    description:
-      "Built websites and web applications for various clients across different industries. Implemented responsive design, interactive animations, and integrations with various APIs and CMS platforms.",
-    skills: ["HTML", "CSS", "JavaScript", "Vue.js", "SASS", "WordPress"],
+    company: "Native Productions",
+    link: "https://nvpdev.tech",
+    description: `
+Building and maintaining **web and mobile apps** with **TypeScript**, **React**, **Next.js**, and **Ionic**.  
+Focus on crafting **responsive**, **accessible**, and **high-performance** interfaces.  
+Collaborate with cross-functional teams to deliver reliable features and a consistent user experience.
+    `,
+    skills: ["TypeScript", "JavaScript", "React", "Next.js", "Ionic", "Tailwind CSS"],
+  },
+  {
+    period: "Oct 2020 — Present",
+    title: "Frontend Engineer",
+    company: "Kano Solution",
+    link: "https://kanosolution.com",
+    description: `
+Developing and scaling **web and mobile applications** using **Vue.js**, **Nuxt.js**, **React Native**, and **TypeScript**.  
+Contribute to frontend architecture and ensure **code quality** through reviews and refactoring.  
+Work closely with design and backend teams to create smooth, maintainable, and cohesive user experiences.
+    `,
+    skills: ["TypeScript", "JavaScript", "Vue.js", "Nuxt.js", "React Native", "Tailwind CSS"],
+  },
+  {
+    period: "Nov 2023 — Oct 2024",
+    title: "Test Automation Engineer",
+    company: "PT HM Sampoerna Tbk.",
+    link: "https://www.sampoerna.com",
+    description: `
+Developed **automated testing workflows** for web and Android apps using **WebdriverIO** and **TypeScript**.  
+Improved testing efficiency and reliability by streamlining QA pipelines and enhancing test coverage.  
+Collaborated with teams to deliver high-quality releases and maintain product stability.
+    `,
+    skills: ["TypeScript", "JavaScript", "WebdriverIO"],
+  },
+  {
+    period: "Sep 2018 — Oct 2020",
+    title: "Web Developer",
+    company: "Genesys Integrated Indonesia",
+    link: "https://genesysindonesia.com",
+    description: `
+Built and maintained **web applications** using **Vue.js**, **Laravel**, and **JavaScript**.  
+Implemented **responsive designs** and integrated APIs to support various client projects.  
+Collaborated with designers and backend developers to deliver scalable digital solutions.
+    `,
+    skills: ["JavaScript", "Vue.js", "Laravel", "MySQL"],
   },
 ];
 

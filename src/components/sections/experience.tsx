@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { EXPERIENCES } from "@/lib/constants";
 import { ArrowUpRightIcon } from "@phosphor-icons/react/dist/ssr";
+import RenderMarkdown from "../ui/render-markdown";
 
 export function Experience() {
   return (
@@ -30,7 +31,9 @@ export function Experience() {
                 </div>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-muted-foreground leading-relaxed">{exp.description}</p>
+                <div className="text-muted-foreground leading-relaxed">
+                  <RenderMarkdown content={exp.description} />
+                </div>
                 <div className="flex flex-wrap gap-2">
                   {exp.skills.map((skill) => (
                     <Badge key={skill} variant="secondary">

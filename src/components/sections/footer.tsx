@@ -22,7 +22,7 @@ export function Footer() {
           </div>
           <div className="flex gap-4">
             <a
-              href="https://github.com"
+              href="https://github.com/ayisrhmn"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
@@ -31,7 +31,7 @@ export function Footer() {
               <GithubLogoIcon className="w-5 h-5" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/ayisrhmn"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
@@ -40,7 +40,7 @@ export function Footer() {
               <LinkedinLogoIcon className="w-5 h-5" />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://instagram.com/ayisrhmn"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
@@ -49,7 +49,7 @@ export function Footer() {
               <InstagramLogoIcon className="w-5 h-5" />
             </a>
             <a
-              href="mailto:hello@example.com"
+              href="mailto:farizrahman30@gmail.com"
               className="text-muted-foreground hover:text-foreground transition-colors"
               aria-label="Email"
             >
