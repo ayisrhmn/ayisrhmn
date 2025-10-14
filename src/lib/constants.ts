@@ -29,7 +29,7 @@ Collaborate with cross-functional teams to deliver reliable features and a consi
     company: "Kano Solution",
     link: "https://kanosolution.com",
     description: `
-Developing and scaling **web and mobile applications** using **Vue.js**, **Nuxt.js**, **React Native**, and **TypeScript**.  
+Developing and scaling **web and mobile applications** using **TypeScript**, **Vue.js**, **Nuxt.js**, and **React Native**.  
 Contribute to frontend architecture and ensure **code quality** through reviews and refactoring.  
 Work closely with design and backend teams to create smooth, maintainable, and cohesive user experiences.
     `,
@@ -41,11 +41,11 @@ Work closely with design and backend teams to create smooth, maintainable, and c
     company: "PT HM Sampoerna Tbk.",
     link: "https://www.sampoerna.com",
     description: `
-Developed **automated testing workflows** for web and Android apps using **WebdriverIO** and **TypeScript**.  
+Developed **automated testing workflows** for web and Android apps using **TypeScript** and **WebdriverIO**.  
 Improved testing efficiency and reliability by streamlining QA pipelines and enhancing test coverage.  
 Collaborated with teams to deliver high-quality releases and maintain product stability.
     `,
-    skills: ["TypeScript", "JavaScript", "WebdriverIO"],
+    skills: ["TypeScript", "JavaScript", "WebdriverIO", "Jenkins"],
   },
   {
     period: "Sep 2018 — Oct 2020",
@@ -53,7 +53,7 @@ Collaborated with teams to deliver high-quality releases and maintain product st
     company: "Genesys Integrated Indonesia",
     link: "https://genesysindonesia.com",
     description: `
-Built and maintained **web applications** using **Vue.js**, **Laravel**, and **JavaScript**.  
+Built and maintained **web applications** using **JavaScript**, **Vue.js**, and **Laravel**.  
 Implemented **responsive designs** and integrated APIs to support various client projects.  
 Collaborated with designers and backend developers to deliver scalable digital solutions.
     `,
