@@ -21,16 +21,16 @@ export function Footer({ socialMedias }: FooterProps) {
             </p>
           </div>
           <div className="flex gap-4">
-            {socialMedias.map((item) => {
-              const Icon = SOCIAL_MEDIA_ICONS[item.name];
+            {socialMedias?.map((item) => {
+              const Icon = SOCIAL_MEDIA_ICONS[item?.name];
               return (
                 <a
-                  key={item.id}
-                  href={item.link}
-                  target={item.name === "Email" ? "_self" : "_blank"}
+                  key={item?.id}
+                  href={item?.link}
+                  target={item?.name === "Email" ? "_self" : "_blank"}
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors"
-                  aria-label={item.name}
+                  aria-label={item?.name}
                 >
                   {Icon && <Icon className="w-6 h-6" />} {/* render kalau ada */}
                 </a>

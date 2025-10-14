@@ -19,10 +19,10 @@ export function Hero({ hero, socialMedias }: HeroProps) {
       <div className="max-w-4xl w-full">
         <div className="space-y-6">
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-balance">
-            {hero.headline}
+            {hero?.headline}
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl text-pretty">
-            {hero.subHeadline}
+            {hero?.subHeadline}
           </p>
           <div className="flex flex-wrap gap-4 pt-4">
             <Button size="lg" asChild>
@@ -33,16 +33,16 @@ export function Hero({ hero, socialMedias }: HeroProps) {
             </Button> */}
           </div>
           <div className="flex gap-4 pt-6">
-            {socialMedias.map((item) => {
-              const Icon = SOCIAL_MEDIA_ICONS[item.name];
+            {socialMedias?.map((item) => {
+              const Icon = SOCIAL_MEDIA_ICONS[item?.name];
               return (
                 <a
-                  key={item.id}
-                  href={item.link}
-                  target={item.name === "Email" ? "_self" : "_blank"}
+                  key={item?.id}
+                  href={item?.link}
+                  target={item?.name === "Email" ? "_self" : "_blank"}
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-foreground transition-colors"
-                  aria-label={item.name}
+                  aria-label={item?.name}
                 >
                   {Icon && <Icon className="w-6 h-6" />} {/* render kalau ada */}
                 </a>
