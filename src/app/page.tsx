@@ -9,6 +9,8 @@ import { safePromise } from "@/lib/utils";
 import { notFound } from "next/navigation";
 // import { Projects } from "@/components/sections/projects";
 
+export const dynamic = "force-dynamic";
+
 const getSiteContent = async () => {
   const [data, fallback] = await safePromise(async () => {
     const hero = await heroApi.getHero();
