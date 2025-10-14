@@ -1,13 +1,15 @@
 import { Button } from "@/components/ui/button";
-import {
-  EnvelopeSimpleIcon,
-  GithubLogoIcon,
-  InstagramLogoIcon,
-  LinkedinLogoIcon,
-} from "@phosphor-icons/react/dist/ssr";
+import { Hero as HeroType } from "@/lib/apis/hero/hero-type";
+import { SocialMedia } from "@/lib/apis/social-media/social-media-type";
+import { SOCIAL_MEDIA_ICONS } from "@/lib/constants";
 import { ThemeToggle } from "../ui/theme-toggle";
 
-export function Hero() {
+interface HeroProps {
+  hero: HeroType;
+  socialMedias: SocialMedia[];
+}
+
+export function Hero({ hero, socialMedias }: HeroProps) {
   return (
     <section className="min-h-screen flex items-center justify-center px-4 py-20">
       <div className="fixed top-6 right-6 z-50">
@@ -17,11 +19,10 @@ export function Hero() {
       <div className="max-w-4xl w-full">
         <div className="space-y-6">
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-balance">
-            Sr. Frontend Engineer
+            {hero.headline}
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl text-pretty">
-            Based in Indonesia, crafting user-centric interfaces with React, Next.js, and modern web
-            tech.
+            {hero.subHeadline}
           </p>
           <div className="flex flex-wrap gap-4 pt-4">
             <Button size="lg" asChild>
@@ -32,40 +33,21 @@ export function Hero() {
             </Button> */}
           </div>
           <div className="flex gap-4 pt-6">
-            <a
-              href="https://github.com/ayisrhmn"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-foreground transition-colors"
-              aria-label="GitHub"
-            >
-              <GithubLogoIcon className="w-6 h-6" />
-            </a>
-            <a
-              href="https://linkedin.com/in/ayisrhmn"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-foreground transition-colors"
-              aria-label="LinkedIn"
-            >
-              <LinkedinLogoIcon className="w-6 h-6" />
-            </a>
-            <a
-              href="https://instagram.com/ayisrhmn"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-foreground transition-colors"
-              aria-label="Instagram"
-            >
-              <InstagramLogoIcon className="w-6 h-6" />
-            </a>
-            <a
-              href="mailto:farizrahman30@gmail.com"
-              className="text-muted-foreground hover:text-foreground transition-colors"
-              aria-label="Email"
-            >
-              <EnvelopeSimpleIcon className="w-6 h-6" />
-            </a>
+            {socialMedias.map((item) => {
+              const Icon = SOCIAL_MEDIA_ICONS[item.name];
+              return (
+                <a
+                  key={item.id}
+                  href={item.link}
+                  target={item.name === "Email" ? "_self" : "_blank"}
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                  aria-label={item.name}
+                >
+                  {Icon && <Icon className="w-6 h-6" />} {/* render kalau ada */}
+                </a>
+              );
+            })}
           </div>
         </div>
       </div>

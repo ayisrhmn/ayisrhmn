@@ -1,8 +1,16 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { SocialMedia } from "@/lib/apis/social-media/social-media-type";
 import { ChatIcon, EnvelopeSimpleIcon } from "@phosphor-icons/react/dist/ssr";
 
-export function Contact() {
+interface ContactProps {
+  socialMedias: SocialMedia[];
+}
+
+export function Contact({ socialMedias }: ContactProps) {
+  const email = socialMedias?.find((v) => v?.name === "Email");
+  const linkedIn = socialMedias?.find((v) => v?.name === "LinkedIn");
+
   return (
     <section id="contact" className="py-20 px-4 bg-muted/30">
       <div className="max-w-2xl mx-auto">
@@ -17,17 +25,13 @@ export function Contact() {
           <CardContent className="space-y-4">
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild className="gap-2">
-                <a href="mailto:farizrahman30@gmail.com">
+                <a href={email?.link} target="_self">
                   <EnvelopeSimpleIcon className="w-5 h-5" />
                   Email Me
                 </a>
               </Button>
               <Button size="lg" variant="outline" asChild className="gap-2 bg-transparent">
-                <a
-                  href="https://linkedin.com/in/ayisrhmn"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href={linkedIn?.link} target="_blank" rel="noopener noreferrer">
                   <ChatIcon className="w-5 h-5" />
                   LinkedIn
                 </a>
