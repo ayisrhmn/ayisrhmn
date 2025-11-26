@@ -9,7 +9,7 @@ export function Footer({ socialMedias }: FooterProps) {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t py-12 px-4">
+    <footer className="border-t bg-card/20 backdrop-blur-xs py-12 px-4">
       <div className="max-w-4xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-center md:text-left">
