@@ -12,7 +12,7 @@ export function Contact({ socialMedias }: ContactProps) {
   const linkedIn = socialMedias?.find((v) => v?.name === "LinkedIn");
 
   return (
-    <section id="contact" className="py-20 px-4 bg-muted/30">
+    <section id="contact" className="py-20 px-4">
       <div className="max-w-2xl mx-auto">
         <Card>
           <CardHeader className="text-center">
