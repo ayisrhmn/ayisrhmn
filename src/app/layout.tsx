@@ -1,3 +1,5 @@
+import { AnimatedBackground } from "@/components/ui/animated-background";
+import { Preloader } from "@/components/ui/preloader";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -134,12 +136,9 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <Preloader />
+        <AnimatedBackground />
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <Suspense>{children}</Suspense>
         </ThemeProvider>
         <Analytics />
