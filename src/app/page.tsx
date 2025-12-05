@@ -3,11 +3,11 @@ import { Contact } from "@/components/sections/contact";
 import { Experience } from "@/components/sections/experience";
 import { Footer } from "@/components/sections/footer";
 import { Hero } from "@/components/sections/hero";
+import { Projects } from "@/components/sections/projects";
 import { ScrollIndicator } from "@/components/ui/scroll-indicator";
 import { aboutApi, experienceApi, heroApi, socialMediaApi } from "@/lib/apis";
 import { safePromise } from "@/lib/utils";
 import { notFound } from "next/navigation";
-// import { Projects } from "@/components/sections/projects";
 
 export const dynamic = "force-dynamic";
 
@@ -38,7 +38,7 @@ export default async function Home() {
         <Hero hero={hero} socialMedias={socialMedias} />
         <About about={about} />
         <Experience experiences={experiences} />
-        {/* <Projects /> */}
+        <Projects />
         <Contact socialMedias={socialMedias} />
         <Footer socialMedias={socialMedias} />
         <ScrollIndicator />
