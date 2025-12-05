@@ -18,7 +18,7 @@ export const PROJECTS = [
     description:
       "AI-Powered Ingredient Scanner & Recipe Generator. Scan your ingredients and get smart recipe suggestions instantly.",
     image: "/projects/ingre-ai.jpg",
-    tags: ["Next.js", "TypeScript", "Shadcn UI", "Gemini 2.0 Flash Lite"],
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI", "Gemini 2.0 Flash Lite"],
     github: "https://github.com/ayisrhmn/ingre-ai",
     demo: "https://ingre-ai.vercel.app",
   },
