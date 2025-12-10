@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://ayisrhmn.vercel.app
-
-# Sitemaps
-Sitemap: https://ayisrhmn.vercel.app/sitemap.xml
