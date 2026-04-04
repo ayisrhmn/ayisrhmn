@@ -1,15 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { SocialMedia } from "@/lib/apis/social-media/social-media-type";
+import { SOCIAL_MEDIAS } from "@/lib/constants";
 import { ChatIcon, EnvelopeSimpleIcon } from "@phosphor-icons/react/dist/ssr";
 
-interface ContactProps {
-  socialMedias: SocialMedia[];
-}
-
-export function Contact({ socialMedias }: ContactProps) {
-  const email = socialMedias?.find((v) => v?.name === "Email");
-  const linkedIn = socialMedias?.find((v) => v?.name === "LinkedIn");
+export function Contact() {
+  const email = SOCIAL_MEDIAS?.find((v) => v?.name === "Email");
+  const linkedIn = SOCIAL_MEDIAS?.find((v) => v?.name === "LinkedIn");
 
   return (
     <section id="contact" className="py-20 px-4">

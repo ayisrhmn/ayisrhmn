@@ -1,21 +1,17 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Experience as ExperienceType } from "@/lib/apis/experience/experience-type";
+import { EXPERIENCES } from "@/lib/constants";
 import { ArrowUpRightIcon } from "@phosphor-icons/react/dist/ssr";
 import RenderMarkdown from "../ui/render-markdown";
 
-interface ExperienceProps {
-  experiences: ExperienceType[];
-}
-
-export function Experience({ experiences }: ExperienceProps) {
+export function Experience() {
   return (
     <section id="experience" className="py-20 px-4">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-12">Experience</h2>
         <div className="space-y-8">
-          {experiences?.map((exp) => (
-            <Card key={exp?.id} className="group hover:shadow-lg transition-shadow">
+          {EXPERIENCES?.map((exp, index) => (
+            <Card key={index} className="group hover:shadow-lg transition-shadow">
               <CardHeader>
                 <div className="flex items-start justify-between gap-4">
                   <div className="space-y-2 flex-1">

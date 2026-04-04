@@ -1,11 +1,6 @@
-import { SocialMedia } from "@/lib/apis/social-media/social-media-type";
-import { SOCIAL_MEDIA_ICONS } from "@/lib/constants";
+import { SOCIAL_MEDIA_ICONS, SOCIAL_MEDIAS } from "@/lib/constants";
 
-interface FooterProps {
-  socialMedias: SocialMedia[];
-}
-
-export function Footer({ socialMedias }: FooterProps) {
+export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -21,11 +16,11 @@ export function Footer({ socialMedias }: FooterProps) {
             </p>
           </div>
           <div className="flex gap-4">
-            {socialMedias?.map((item) => {
-              const Icon = SOCIAL_MEDIA_ICONS[item?.name];
+            {SOCIAL_MEDIAS?.map((item, index) => {
+              const Icon = SOCIAL_MEDIA_ICONS[item?.name as keyof typeof SOCIAL_MEDIA_ICONS];
               return (
                 <a
-                  key={item?.id}
+                  key={index}
                   href={item?.link}
                   target={item?.name === "Email" ? "_self" : "_blank"}
                   rel="noopener noreferrer"
