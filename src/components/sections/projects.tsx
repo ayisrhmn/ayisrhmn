@@ -22,15 +22,17 @@ export function Projects() {
                 <CardTitle className="flex items-center justify-between">
                   <span>{project.title}</span>
                   <div className="flex gap-2">
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-foreground transition-colors"
-                      aria-label="View source code"
-                    >
-                      <GithubLogoIcon className="w-5 h-5" />
-                    </a>
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground hover:text-foreground transition-colors"
+                        aria-label="View source code"
+                      >
+                        <GithubLogoIcon className="w-5 h-5" />
+                      </a>
+                    )}
                     <a
                       href={project.demo}
                       target="_blank"

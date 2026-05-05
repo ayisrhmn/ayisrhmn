@@ -13,7 +13,7 @@ export const SOCIAL_MEDIA_ICONS = {
 };
 
 export const HERO = {
-  headline: "Frontend Developer",
+  headline: "Frontend-leaning Full-Stack Developer",
   subHeadline:
     "Based in Indonesia, crafting user-centric interfaces with React, Next.js, and modern web tech.",
 };
@@ -25,11 +25,11 @@ export const SOCIAL_MEDIAS = [
   { name: "LinkedIn", link: "https://linkedin.com/in/ayisrhmn" },
 ];
 
-export const ABOUT = `I'm **Muhammad Fariz Rahman** — a Frontend Developer based in Indonesia.
+export const ABOUT = `I'm **Muhammad Fariz Rahman** — a Frontend-leaning Full-Stack Developer based in Indonesia.
 
 I’m passionate about crafting accessible, fast, and visually refined interfaces that balance clean design with solid engineering. Over the past **7+ years**, I’ve focused on building seamless experiences across web and mobile using **React**, **Next.js**, and **Ionic**, while occasionally exploring **React Native** and **Nuxt**.
 
-Though my main expertise lies in frontend, I’ve also worked with **Express**, **Fastify**, and **NestJS** on personal projects, along with databases like **MySQL**, **PostgreSQL**, and **MongoDB** — giving me a broader understanding of full-stack workflows and system design.
+Though my main expertise lies in frontend, I’ve also worked with **Express**, **Fastify**, and **NestJS** on several projects, along with databases like **MySQL**, **PostgreSQL**, and **MongoDB** — giving me a broader understanding of full-stack workflows and system design.
 
 My approach to development combines **attention to detail**, **performance**, and **usability**, ensuring that every product I work on feels intuitive, reliable, and built to last.
 
@@ -41,16 +41,16 @@ export const EXPERIENCES = [
     title: "Frontend Developer",
     company: "Native Productions",
     link: "https://nvpdev.tech",
-    description: `I build modern web and mobile applications using **React, Next.js, and Ionic**, transforming product ideas into clean and intuitive user interfaces. I focus on optimizing performance to ensure applications run smoothly even at scale, while collaborating closely with backend engineers and product teams to deliver reliable, high-quality features.`,
-    skills: ["React", "Next.js", "Ionic", "TypeScript", "JavaScript"],
+    description: `I build modern web and mobile applications using **React, Next.js, and Ionic**, transforming product ideas into clean and intuitive user interfaces. I focus on optimizing performance to ensure applications run smoothly even at scale, while collaborating closely with C-Level, backend engineers and product teams to deliver reliable, high-quality features.`,
+    skills: ["React", "Next.js", "Ionic", "TypeScript", "JavaScript", "NestJS"],
   },
   {
     period: "Oct 2020 — Mar 2026",
-    title: "Senior Frontend Developer",
+    title: "Senior Frontend Engineer",
     company: "Kano Solution",
     link: "https://kanosolution.com",
     description: `I develop and scale web applications across multiple projects, focusing on building and maintaining clean, scalable frontend architectures. I work within the **Vue.js, Nuxt.js, and React ecosystems**, ensuring high code quality while keeping performance and long-term maintainability in check.`,
-    skills: ["Vue.js", "Nuxt.js", "React Native", "TypeScript", "JavaScript"],
+    skills: ["Vue.js", "Nuxt.js", "React Native", "TypeScript", "JavaScript", "Go"],
   },
   {
     period: "Nov 2023 — Oct 2024",
@@ -72,21 +72,39 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
+    title: "Mager AI - Konten Mulus, Effort Minus",
+    description:
+      "Collaborated with a cross-functional team to build a live AI content generator platform. Focused on engineering high-performance Next.js interfaces and scaling backend services with NestJS to handle content generation.",
+    image: "/projects/mager-ai.png",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "NestJS"],
+    github: null,
+    demo: "https://mageran.ai/home",
+  },
+  {
+    title: "Mager Klip - Satu Video, Puluhan Klip Viral!",
+    description:
+      "Collaborated with a cross-functional team to build a live AI-powered video clipping platform. Focused on engineering high-performance Next.js interfaces and scaling backend services with NestJS to handle content generation.",
+    image: "/projects/mager-klip.png",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "NestJS"],
+    github: null,
+    demo: "https://klip.mageran.ai",
+  },
+  {
+    title: "Native Academy - Bantu kamu jago kerja secara digital",
+    description:
+      "Part of a development team building a unified LMS ecosystem. Developed scalable frontend structures with Next.js and TypeScript, delivering a high-performance and accessible platform through consistent, reusable UI components.",
+    image: "/projects/nativy.png",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
+    github: null,
+    demo: "https://nativeacademy.id",
+  },
+  {
     title: "IngreAI — Ingredients Intelligence",
     description:
       "AI-Powered Ingredient Scanner & Recipe Generator. Scan your ingredients and get smart recipe suggestions instantly.",
     image: "/projects/ingre-ai.jpg",
-    tags: ["Next.js", "TypeScript", "Shadcn UI", "Gemini 2.0 Flash Lite"],
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Gemini 2.0 Flash Lite"],
     github: "https://github.com/ayisrhmn/ingre-ai",
     demo: "https://ingre-ai.vercel.app",
-  },
-  {
-    title: "EventScope — Master Your Event Tracking",
-    description:
-      "The ultimate playground to design, simulate, and validate your analytics events. Ensure data quality with our Schema Builder and Event Simulator.",
-    image: "/projects/event-scope.jpg",
-    tags: ["Next.js", "TypeScript", "Shadcn UI", "Zustand"],
-    github: "https://github.com/ayisrhmn/event-scope",
-    demo: "https://event-scope-labs.vercel.app",
   },
 ];
