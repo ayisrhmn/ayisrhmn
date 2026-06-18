@@ -1,104 +1,50 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { motion, useReducedMotion } from "framer-motion";
+
+const PIXELS = [
+  { left: "8%", top: "18%", size: 8, delay: 0, color: "bg-primary" },
+  { left: "18%", top: "72%", size: 6, delay: 0.8, color: "bg-accent" },
+  { left: "34%", top: "28%", size: 10, delay: 1.6, color: "bg-secondary" },
+  { left: "48%", top: "84%", size: 6, delay: 0.4, color: "bg-primary" },
+  { left: "62%", top: "14%", size: 8, delay: 1.2, color: "bg-secondary" },
+  { left: "78%", top: "58%", size: 10, delay: 0.2, color: "bg-accent" },
+  { left: "90%", top: "32%", size: 6, delay: 1.8, color: "bg-primary" },
+];
 
 export function AnimatedBackground() {
-  return (
-    <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
-      {/* Grid Pattern */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(128,128,128,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(128,128,128,0.05)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]" />
-
-      {/* Particles */}
-      <Particles number={50} />
-
-      {/* Moving Blobs */}
-      <motion.div
-        animate={{
-          scale: [1, 1.2, 1],
-          x: [0, 100, 0],
-          y: [0, 50, 0],
-        }}
-        transition={{
-          duration: 20,
-          repeat: Infinity,
-          repeatType: "reverse",
-          ease: "easeInOut",
-        }}
-        className="absolute top-[-10%] left-[-10%] h-[500px] w-[500px] rounded-full bg-primary/10 blur-[120px]"
-      />
-      <motion.div
-        animate={{
-          scale: [1, 1.1, 1],
-          x: [0, -100, 0],
-          y: [0, -50, 0],
-        }}
-        transition={{
-          duration: 15,
-          repeat: Infinity,
-          repeatType: "reverse",
-          ease: "easeInOut",
-        }}
-        className="absolute bottom-[-10%] right-[-10%] h-[500px] w-[500px] rounded-full bg-blue-500/10 blur-[120px]"
-      />
-      <motion.div
-        animate={{
-          scale: [1, 1.3, 1],
-          x: [0, 50, 0],
-          y: [0, 100, 0],
-        }}
-        transition={{
-          duration: 18,
-          repeat: Infinity,
-          repeatType: "reverse",
-          ease: "easeInOut",
-        }}
-        className="absolute top-[40%] left-[40%] h-[400px] w-[400px] rounded-full bg-purple-500/10 blur-[120px]"
-      />
-    </div>
-  );
-}
-
-const Particles = ({ number = 50 }: { number?: number }) => {
-  const [particles, setParticles] = useState<
-    Array<{ x: number; y: number; size: number; duration: number; delay: number }>
-  >([]);
-
-  useEffect(() => {
-    const newParticles = [...new Array(number)].map(() => ({
-      x: Math.random() * 100,
-      y: Math.random() * 100,
-      size: Math.random() * 5 + 2, // Increased size: 2px - 7px
-      duration: Math.random() * 10 + 10, // Faster duration: 10s - 20s
-      delay: Math.random() * 5,
-    }));
-    setParticles(newParticles);
-  }, [number]);
+  const shouldReduceMotion = useReducedMotion();
 
   return (
-    <div className="absolute inset-0">
-      {particles.map((particle, idx) => (
+    <div className="fixed inset-0 -z-10 overflow-hidden bg-background pointer-events-none">
+      <div className="pixel-grid absolute inset-0 opacity-40" />
+      <div className="pixel-dither absolute inset-0 opacity-35" />
+      <div className="pixel-scanline absolute inset-0 opacity-45" />
+      <div className="absolute inset-x-0 top-0 h-24 bg-primary/10" />
+      <div className="absolute inset-x-0 bottom-0 h-32 bg-accent/10" />
+
+      {PIXELS.map((pixel, index) => (
         <motion.div
-          key={idx}
-          className="absolute rounded-full bg-primary" // Removed /10 opacity, using primary color
+          key={index}
+          className={`absolute ${pixel.color} shadow-[3px_3px_0_var(--pixel-shadow)]`}
           style={{
-            left: `${particle.x}%`,
-            top: `${particle.y}%`,
-            width: particle.size,
-            height: particle.size,
+            left: pixel.left,
+            top: pixel.top,
+            width: pixel.size,
+            height: pixel.size,
           }}
           animate={{
-            y: [0, -100, 0],
-            opacity: [0, 0.8, 0], // Increased opacity max value
+            y: shouldReduceMotion ? 0 : [0, -12, 0],
+            opacity: shouldReduceMotion ? 0.55 : [0.35, 0.95, 0.35],
           }}
           transition={{
-            duration: particle.duration,
+            duration: 2.4,
             repeat: Infinity,
-            delay: particle.delay,
-            ease: "easeInOut",
+            delay: pixel.delay,
+            ease: "linear",
           }}
         />
       ))}
     </div>
   );
-};
+}
