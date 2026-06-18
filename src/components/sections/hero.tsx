@@ -4,17 +4,21 @@ import { ThemeToggle } from "../ui/theme-toggle";
 
 export function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 py-20">
-      <div className="fixed top-6 right-6 z-50">
+    <section className="relative flex min-h-screen items-center justify-center px-4 py-20">
+      <div className="fixed top-4 right-4 z-50 md:top-6 md:right-6">
         <ThemeToggle />
       </div>
 
       <div className="max-w-4xl w-full">
-        <div className="space-y-6">
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-balance">
+        <div className="pixel-panel relative space-y-6 px-5 py-8 md:px-8 md:py-10">
+          <div
+            className="h-4 w-24 border-[3px] border-border bg-secondary shadow-[4px_4px_0_var(--pixel-shadow)]"
+            aria-hidden="true"
+          />
+          <h1 className="pixel-text text-3xl leading-relaxed text-balance text-primary md:text-5xl">
             {HERO?.headline}
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl text-pretty">
+          <p className="max-w-2xl border-l-4 border-accent pl-4 text-lg leading-relaxed text-muted-foreground text-pretty md:text-xl">
             {HERO?.subHeadline}
           </p>
           <div className="flex flex-wrap gap-4 pt-4">
@@ -34,7 +38,7 @@ export function Hero() {
                   href={item?.link}
                   target={item?.name === "Email" ? "_self" : "_blank"}
                   rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-foreground transition-colors"
+                  className="pixel-press flex size-10 items-center justify-center border-[3px] border-border bg-card text-muted-foreground shadow-[4px_4px_0_var(--pixel-shadow)] hover:text-primary"
                   aria-label={item?.name}
                 >
                   {Icon && <Icon className="w-6 h-6" />}

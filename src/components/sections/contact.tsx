@@ -12,8 +12,10 @@ export function Contact() {
       <div className="max-w-2xl mx-auto">
         <Card>
           <CardHeader className="text-center">
-            <CardTitle className="text-3xl md:text-4xl">Let's Work Together</CardTitle>
-            <CardDescription className="text-lg pt-2">
+            <CardTitle className="text-2xl leading-relaxed text-primary md:text-3xl">
+              Let's Work Together
+            </CardTitle>
+            <CardDescription className="pt-2 text-base leading-7 md:text-lg">
               I'm always open to discussing new projects, creative ideas, or opportunities to be
               part of your vision.
             </CardDescription>
@@ -33,7 +35,7 @@ export function Contact() {
                 </a>
               </Button>
             </div>
-            <p className="text-center text-sm text-muted-foreground pt-4">
+            <p className="pixel-text pt-4 text-center text-[9px] text-muted-foreground">
               Usually responds within 24 hours
             </p>
           </CardContent>

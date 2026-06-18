@@ -34,24 +34,26 @@ export function Preloader() {
     <AnimatePresence mode="wait">
       {isLoading && (
         <motion.div
-          className="fixed inset-0 z-[9999] flex items-center justify-center bg-background"
-          exit={{ y: "-100vh", transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] } }}
+          className="pixel-grid fixed inset-0 z-[9999] flex items-center justify-center bg-background px-4"
+          exit={{ y: "-100vh", transition: { duration: 0.5, ease: [0.76, 0, 0.24, 1] } }}
         >
-          <div className="flex flex-col items-center gap-4">
+          <div className="pixel-panel flex w-full max-w-md flex-col items-center gap-6 px-5 py-8 text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="text-6xl font-bold tracking-tighter"
+              className="pixel-text text-3xl text-primary md:text-5xl"
             >
               {counter}%
             </motion.div>
-            <div className="h-1 w-48 overflow-hidden rounded-full bg-muted">
-              <motion.div
-                className="h-full bg-primary"
-                initial={{ width: "0%" }}
-                animate={{ width: `${counter}%` }}
-                transition={{ duration: 0.1 }}
-              />
+            <div className="grid w-full grid-cols-10 gap-1 border-[3px] border-border bg-muted p-1 shadow-[4px_4px_0_var(--pixel-shadow)]">
+              {Array.from({ length: 10 }).map((_, index) => (
+                <div
+                  key={index}
+                  className={`h-5 border-2 border-border ${
+                    counter >= (index + 1) * 10 ? "bg-primary" : "bg-background"
+                  }`}
+                />
+              ))}
             </div>
           </div>
         </motion.div>
