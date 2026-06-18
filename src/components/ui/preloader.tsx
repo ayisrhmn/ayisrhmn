@@ -1,11 +1,12 @@
 "use client";
 
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 export function Preloader() {
   const [isLoading, setIsLoading] = useState(true);
   const [counter, setCounter] = useState(0);
+  const shouldReduceMotion = useReducedMotion();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -35,12 +36,16 @@ export function Preloader() {
       {isLoading && (
         <motion.div
           className="pixel-grid fixed inset-0 z-[9999] flex items-center justify-center bg-background px-4"
-          exit={{ y: "-100vh", transition: { duration: 0.5, ease: [0.76, 0, 0.24, 1] } }}
+          exit={
+            shouldReduceMotion
+              ? { opacity: 0, transition: { duration: 0.1 } }
+              : { y: "-100vh", transition: { duration: 0.5, ease: [0.76, 0, 0.24, 1] } }
+          }
         >
           <div className="pixel-panel flex w-full max-w-md flex-col items-center gap-6 px-5 py-8 text-center">
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={shouldReduceMotion ? { opacity: 1 } : { opacity: 0, y: 20 }}
+              animate={shouldReduceMotion ? { opacity: 1 } : { opacity: 1, y: 0 }}
               className="pixel-text text-3xl text-primary md:text-5xl"
             >
               {counter}%

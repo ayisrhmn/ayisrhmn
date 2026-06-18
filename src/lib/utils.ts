@@ -5,7 +5,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export async function safePromise<T, E = any>(
+export async function safePromise<T, E = unknown>(
   promise: () => Promise<T>,
   onFail?: (err: Error) => E,
   onFinally?: () => void,

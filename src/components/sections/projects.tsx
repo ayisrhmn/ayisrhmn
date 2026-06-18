@@ -12,11 +12,11 @@ export function Projects() {
         </h2>
         <div className="grid gap-8 md:grid-cols-2">
           {PROJECTS.map((project, index) => (
-            <Card key={index} className="group relative overflow-hidden transition-transform duration-150 hover:-translate-y-1">
-              <div
-                className="absolute top-3 right-3 z-10 flex gap-1"
-                aria-hidden="true"
-              >
+            <Card
+              key={index}
+              className="group relative overflow-hidden transition-transform duration-150 hover:-translate-y-1"
+            >
+              <div className="absolute top-3 right-3 z-10 flex gap-1" aria-hidden="true">
                 <span className="size-3 border-2 border-border bg-primary" />
                 <span className="size-3 border-2 border-border bg-secondary" />
                 <span className="size-3 border-2 border-border bg-accent" />

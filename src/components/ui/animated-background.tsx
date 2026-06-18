@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 
 const PIXELS = [
   { left: "8%", top: "18%", size: 8, delay: 0, color: "bg-primary" },
@@ -13,6 +13,8 @@ const PIXELS = [
 ];
 
 export function AnimatedBackground() {
+  const shouldReduceMotion = useReducedMotion();
+
   return (
     <div className="fixed inset-0 -z-10 overflow-hidden bg-background pointer-events-none">
       <div className="pixel-grid absolute inset-0 opacity-40" />
@@ -32,8 +34,8 @@ export function AnimatedBackground() {
             height: pixel.size,
           }}
           animate={{
-            y: [0, -12, 0],
-            opacity: [0.35, 0.95, 0.35],
+            y: shouldReduceMotion ? 0 : [0, -12, 0],
+            opacity: shouldReduceMotion ? 0.55 : [0.35, 0.95, 0.35],
           }}
           transition={{
             duration: 2.4,
