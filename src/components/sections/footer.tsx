@@ -4,9 +4,9 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t-[3px] border-border bg-card py-12 px-4 shadow-[0_-4px_0_var(--pixel-shadow)]">
-      <div className="max-w-4xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+    <footer className="border-t-[3px] border-border bg-card px-4 py-8 shadow-[0_-4px_0_var(--pixel-shadow)]">
+      <div className="mx-auto max-w-6xl">
+        <div className="pixel-inner-panel flex flex-col items-center justify-between gap-6 p-4 md:flex-row">
           <div className="text-center md:text-left">
             <p className="pixel-text text-[9px] leading-relaxed text-muted-foreground">
               © {currentYear} Muhammad Fariz Rahman. All rights reserved.
@@ -15,7 +15,7 @@ export function Footer() {
               Built with Next.js and Tailwind CSS
             </p>
           </div>
-          <div className="flex gap-4">
+          <div className="flex flex-wrap justify-center gap-4">
             {SOCIAL_MEDIAS?.map((item, index) => {
               const Icon = SOCIAL_MEDIA_ICONS[item?.name as keyof typeof SOCIAL_MEDIA_ICONS];
               return (
