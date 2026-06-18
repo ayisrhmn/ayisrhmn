@@ -25,7 +25,7 @@ export function Hero() {
           />
           <div className="grid gap-8 lg:grid-cols-[1fr_220px] lg:items-end">
             <div className="space-y-6">
-              <h1 className="pixel-text max-w-4xl text-3xl leading-relaxed text-balance text-primary md:text-5xl">
+              <h1 className="pixel-text max-w-4xl text-2xl leading-relaxed text-balance text-primary md:text-5xl">
                 {HERO?.headline}
               </h1>
               <p className="max-w-2xl border-l-4 border-accent bg-background/35 py-3 pl-4 text-lg leading-relaxed text-muted-foreground text-pretty md:text-xl">

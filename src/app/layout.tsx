@@ -1,5 +1,6 @@
 import { JSON_LD, METADATA_BASE } from "@/cfgs/seo.cfg";
 import { AnimatedBackground } from "@/components/ui/animated-background";
+import { MusicToggle } from "@/components/ui/music-toggle";
 import { Preloader } from "@/components/ui/preloader";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { Analytics } from "@vercel/analytics/next";
@@ -48,8 +49,14 @@ export default function RootLayout({
         />
         <Preloader />
         <AnimatedBackground />
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem
+          disableTransitionOnChange
+        >
           <Suspense>{children}</Suspense>
+          <MusicToggle />
         </ThemeProvider>
         <Analytics />
         <SpeedInsights />

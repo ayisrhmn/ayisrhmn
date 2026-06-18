@@ -14,6 +14,7 @@
   --primary-foreground: #fff4cf;
   --secondary: #f7c948;
   --secondary-foreground: #1f1a2e;
+  --secondary-readable: #7a4a00;
   --muted: #ead89e;
   --muted-foreground: #5d4f65;
   --accent: #ef4f91;
@@ -54,6 +55,7 @@
   --primary-foreground: #0c1024;
   --secondary: #f7c948;
   --secondary-foreground: #0c1024;
+  --secondary-readable: #f7c948;
   --muted: #252b52;
   --muted-foreground: #b9acd3;
   --accent: #ef4f91;
@@ -96,6 +98,7 @@
   --color-primary-foreground: var(--primary-foreground);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary-readable: var(--secondary-readable);
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
@@ -293,6 +296,78 @@
     left: 1rem;
     background: var(--accent);
   }
+
+  .pixel-runner {
+    position: relative;
+    width: 7rem;
+    height: 5rem;
+  }
+
+  .pixel-runner-sprite {
+    position: absolute;
+    left: 50%;
+    bottom: 1.25rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    background: transparent;
+    transform: translateX(-50%);
+    animation: pixel-runner-bob 420ms steps(2, end) infinite;
+    box-shadow:
+      0 -32px 0 var(--secondary),
+      8px -32px 0 var(--secondary),
+      -8px -24px 0 var(--border),
+      0 -24px 0 var(--foreground),
+      8px -24px 0 var(--foreground),
+      16px -24px 0 var(--border),
+      -8px -16px 0 var(--primary),
+      0 -16px 0 var(--primary),
+      8px -16px 0 var(--primary),
+      16px -16px 0 var(--primary),
+      -16px -8px 0 var(--accent),
+      -8px -8px 0 var(--primary),
+      0 -8px 0 var(--primary),
+      8px -8px 0 var(--accent),
+      16px -8px 0 var(--primary),
+      -16px 0 0 var(--foreground),
+      -8px 0 0 var(--foreground),
+      8px 0 0 var(--foreground),
+      16px 0 0 var(--foreground);
+  }
+
+  .pixel-runner-ground {
+    position: absolute;
+    right: 0;
+    bottom: 0.5rem;
+    left: 0;
+    height: 0.5rem;
+    border: 2px solid var(--border);
+    background:
+      linear-gradient(to right, var(--primary) 0 25%, transparent 25% 50%, var(--accent) 50% 75%, transparent 75% 100%),
+      var(--background);
+    background-size: 2rem 100%;
+    animation: pixel-ground-run 480ms steps(4, end) infinite;
+  }
+}
+
+@keyframes pixel-runner-bob {
+  0% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, -0.35rem);
+  }
+  100% {
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes pixel-ground-run {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -2rem;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -308,5 +383,10 @@
   .pixel-press:hover,
   .pixel-press:active {
     transform: none;
+  }
+
+  .pixel-runner-sprite,
+  .pixel-runner-ground {
+    animation: none !important;
   }
 }

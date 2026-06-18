@@ -6,7 +6,7 @@ export function About() {
     <section id="about" className="pixel-section">
       <div className="mx-auto max-w-5xl">
         <div className="pixel-panel pixel-corner-blocks relative px-5 py-8 md:px-8">
-          <h2 className="pixel-text pixel-section-title text-2xl leading-relaxed text-secondary md:text-3xl">
+          <h2 className="pixel-text pixel-section-title text-2xl leading-relaxed text-secondary-readable md:text-3xl">
             Hi there! 👋
           </h2>
           <div className="grid gap-6 md:grid-cols-[28px_1fr]">

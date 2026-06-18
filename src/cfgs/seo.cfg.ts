@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
-export const APP_TITLE = "@Ayisrhmn - Frontend-leaning Full-Stack Developer";
+export const APP_TITLE = "Muhammad Fariz Rahman — Frontend-leaning Full-stack Developer";
 export const APP_DESC = "My portfolio website showcasing my projects and experience";
 export const APP_URL = "https://ayisrhmn.vercel.app";
-export const APP_NAME = "@Ayisrhmn";
+export const APP_NAME = "Muhammad Fariz Rahman";
 
 export const METADATA_BASE: Metadata = {
   title: APP_TITLE,
@@ -66,8 +66,8 @@ export const METADATA_BASE: Metadata = {
     "Frontend Engineer",
     "Senior Frontend Developer",
     "Senior Frontend Engineer",
-    "Full-Stack Developer",
-    "Full-Stack Engineer",
+    "Full-stack Developer",
+    "Full-stack Engineer",
     "Web Developer",
     "React Developer",
     "Next.js Developer",
@@ -134,9 +134,9 @@ export const JSON_LD = {
         width: 1200,
         height: 630,
       },
-      jobTitle: "Frontend-leaning Full-Stack Developer",
+      jobTitle: "Frontend-leaning Full-stack Developer",
       description:
-        "Frontend-leaning Full-Stack Developer specializing in React, Next.js, and TypeScript",
+        "Frontend-leaning Full-stack Developer specializing in React, Next.js, and TypeScript",
       knowsAbout: [
         "Frontend Development",
         "React",

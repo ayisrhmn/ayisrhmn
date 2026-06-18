@@ -13,7 +13,7 @@ export const SOCIAL_MEDIA_ICONS = {
 };
 
 export const HERO = {
-  headline: "Frontend-leaning Full-Stack Developer",
+  headline: "Frontend-leaning Full-stack Developer",
   subHeadline:
     "Based in Indonesia, crafting user-centric interfaces with React, Next.js, and modern web tech.",
 };
@@ -25,7 +25,7 @@ export const SOCIAL_MEDIAS = [
   { name: "LinkedIn", link: "https://linkedin.com/in/ayisrhmn" },
 ];
 
-export const ABOUT = `I'm **Muhammad Fariz Rahman** — a Frontend-leaning Full-Stack Developer based in Indonesia.
+export const ABOUT = `I'm **Muhammad Fariz Rahman** — a Frontend-leaning Full-stack Developer based in Indonesia.
 
 I’m passionate about crafting accessible, fast, and visually refined interfaces that balance clean design with solid engineering. Over the past **7+ years**, I’ve focused on building seamless experiences across web and mobile using **React**, **Next.js**, and **Ionic**, while occasionally exploring **React Native** and **Nuxt**.
 
@@ -38,7 +38,7 @@ When I’m not coding, I usually spend my time learning new web technologies, re
 export const EXPERIENCES = [
   {
     period: "May 2024 — Present",
-    title: "Frontend Developer",
+    title: "Full-stack Developer",
     company: "Native Productions",
     link: "https://nvpdev.tech",
     description: `I build modern web and mobile applications using **React, Next.js, and Ionic**, transforming product ideas into clean and intuitive user interfaces. I focus on optimizing performance to ensure applications run smoothly even at scale, while collaborating closely with C-Level, backend engineers and product teams to deliver reliable, high-quality features.`,

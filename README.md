@@ -1,6 +1,6 @@
 # 👋 Hey! I'm Fariz  
 
-Frontend-leaning Full-Stack Developer with 7+ years of experience in crafting seamless, user-centric experiences using React, Next.js, and Vue. Passionate about clean UI, robust Developer Experience (DX), and delivering high-quality products that balance aesthetic precision with technical performance.
+Frontend-leaning Full-stack Developer with 7+ years of experience in crafting seamless, user-centric experiences using React, Next.js, and Vue. Passionate about clean UI, robust Developer Experience (DX), and delivering high-quality products that balance aesthetic precision with technical performance.
 
 ## 🛠️ Tech Stack
 
