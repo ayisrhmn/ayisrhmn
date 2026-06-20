@@ -106,7 +106,8 @@ export const JSON_LD = {
     {
       "@type": "WebSite",
       "@id": `${APP_URL}/#website`,
-      name: APP_TITLE,
+      name: APP_NAME,
+      alternateName: ["Fariz Rahman"],
       url: APP_URL,
       description: APP_DESC,
       inLanguage: "en-US",
@@ -126,7 +127,7 @@ export const JSON_LD = {
       "@type": "Person",
       "@id": `${APP_URL}/#person`,
       name: "Muhammad Fariz Rahman",
-      alternateName: ["Fariz Rahman", "Fariz", "Ayisrhmn", "Ayis"],
+      alternateName: ["Fariz Rahman"],
       url: APP_URL,
       image: {
         "@type": "ImageObject",
