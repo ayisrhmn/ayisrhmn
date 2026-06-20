@@ -26,7 +26,7 @@ export function Experience() {
                 <CardHeader>
                   <div className="flex items-start justify-between gap-4">
                     <div className="space-y-2 flex-1">
-                      <CardDescription className="pixel-text inline-flex border-2 border-border bg-background px-2 py-1 text-[9px] text-secondary-readable shadow-[3px_3px_0_var(--pixel-shadow)]">
+                      <CardDescription className="pixel-text inline-flex border-2 border-border bg-background px-2 py-1 text-[10px] font-semibold text-secondary-readable shadow-[3px_3px_0_var(--pixel-shadow)]">
                         {exp?.period}
                       </CardDescription>
                       <CardTitle className="pt-2 group-hover:text-primary">

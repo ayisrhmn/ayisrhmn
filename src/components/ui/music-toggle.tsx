@@ -17,7 +17,7 @@ export function MusicToggle() {
     const audio = new Audio(MUSIC_SRC);
     audio.loop = true;
     audio.preload = "auto";
-    audio.volume = 0.5;
+    audio.volume = 1;
     audioRef.current = audio;
 
     const handlePreloaderComplete = () => {
