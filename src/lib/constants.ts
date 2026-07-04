@@ -99,12 +99,21 @@ export const PROJECTS = [
     demo: "https://nativeacademy.id",
   },
   {
-    title: "IngreAI — Ingredients Intelligence",
+    title: "KaloriBot — AI Calorie Estimator",
     description:
-      "AI-Powered Ingredient Scanner & Recipe Generator. Scan your ingredients and get smart recipe suggestions instantly.",
-    image: "/projects/ingre-ai.jpg",
-    tags: ["Next.js", "TypeScript", "Gemini 2.0 Flash Lite"],
-    github: "https://github.com/ayisrhmn/ingre-ai",
-    demo: "https://ingre-ai.vercel.app",
+      "AI-powered Telegram bot that analyzes food photos and estimates calories instantly. Simply send a meal photo and receive an estimated calorie breakdown in seconds.",
+    image: "/projects/kalori-bot.png",
+    tags: ["Telegram Bot", "Node.js", "Telegraf", "OpenRouter"],
+    github: "https://github.com/ayisrhmn/calorie-telegram-bot",
+    demo: "https://t.me/id_kalori_bot",
   },
+  // {
+  //   title: "IngreAI — Ingredients Intelligence",
+  //   description:
+  //     "AI-Powered Ingredient Scanner & Recipe Generator. Scan your ingredients and get smart recipe suggestions instantly.",
+  //   image: "/projects/ingre-ai.jpg",
+  //   tags: ["Next.js", "TypeScript", "Gemini 2.0 Flash Lite"],
+  //   github: "https://github.com/ayisrhmn/ingre-ai",
+  //   demo: "https://ingre-ai.vercel.app",
+  // },
 ];
