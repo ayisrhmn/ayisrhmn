@@ -13,9 +13,9 @@ export const SOCIAL_MEDIA_ICONS = {
 };
 
 export const HERO = {
-  headline: "Frontend-leaning Full-stack Developer",
+  headline: "Full-stack Developer",
   subHeadline:
-    "Based in Indonesia, crafting user-centric interfaces with React, Next.js, and modern web tech.",
+    "Based in Indonesia, building polished, reliable web experiences across the stack with TypeScript, React, Next.js, and Node.js.",
 };
 
 export const SOCIAL_MEDIAS = [
@@ -25,13 +25,13 @@ export const SOCIAL_MEDIAS = [
   { name: "LinkedIn", link: "https://linkedin.com/in/ayisrhmn" },
 ];
 
-export const ABOUT = `I'm **Muhammad Fariz Rahman** — a Frontend-leaning Full-stack Developer based in Indonesia.
+export const ABOUT = `I'm **Muhammad Fariz Rahman** — a Full-stack Developer based in Indonesia.
 
-I’m passionate about crafting accessible, fast, and visually refined interfaces that balance clean design with solid engineering. Over the past **7+ years**, I’ve focused on building seamless experiences across web and mobile using **React**, **Next.js**, and **Ionic**, while occasionally exploring **React Native** and **Nuxt**.
+I’m passionate about building accessible, fast, and visually refined digital experiences that balance thoughtful design with solid engineering. Over the past **7+ years**, I’ve built seamless experiences across web and mobile using **React**, **Next.js**, and **Ionic**, while also working with **React Native** and **Nuxt**.
 
-Though my main expertise lies in frontend, I’ve also worked with **Express**, **Fastify**, and **NestJS** on several projects, along with databases like **PostgreSQL**, **MySQL**, and **MongoDB** — giving me a broader understanding of full-stack workflows and system design.
+Alongside my frontend experience, I’ve worked across the backend with **NestJS**, **Express**, and **Fastify**, as well as databases like **PostgreSQL**, **MySQL**, and **MongoDB**. This has given me a broader perspective on full-stack development, from building polished user interfaces to designing APIs, working with data, and thinking through system architecture.
 
-My approach to development combines **attention to detail**, **performance**, and **usability**, ensuring that every product I work on feels intuitive, reliable, and built to last.
+My approach to development combines **attention to detail**, **performance**, and **maintainability**, with a focus on building products that are intuitive, reliable, and built to last.
 
 When I’m not coding, I usually spend my time learning new web technologies, refining side projects, or catching up with games and chill playlists.`;
 
@@ -42,7 +42,7 @@ export const EXPERIENCES = [
     company: "Native Productions",
     link: "https://nvpdev.tech",
     description: `I build modern web and mobile applications using **React, Next.js, and Ionic**, transforming product ideas into clean and intuitive user interfaces. I focus on optimizing performance to ensure applications run smoothly even at scale, while collaborating closely with C-Level, backend engineers and product teams to deliver reliable, high-quality features.`,
-    skills: ["Next.js", "Ionic", "TypeScript", "NestJS", "PostgreSQL"],
+    skills: ["TypeScript", "Next.js", "Ionic", "NestJS", "PostgreSQL"],
   },
   {
     period: "Oct 2020 — Mar 2026",
@@ -50,7 +50,7 @@ export const EXPERIENCES = [
     company: "Kano Solution",
     link: "https://kanosolution.com",
     description: `I develop and scale web applications across multiple projects, focusing on building and maintaining clean, scalable frontend architectures. I work within the **Vue.js, Nuxt.js, and React ecosystems**, ensuring high code quality while keeping performance and long-term maintainability in check.`,
-    skills: ["Vue.js", "Nuxt.js", "React Native", "TypeScript", "Go", "MongoDB"],
+    skills: ["TypeScript", "Vue.js", "Nuxt.js", "React Native", "Go", "MongoDB"],
   },
   {
     period: "Nov 2023 — Oct 2024",
@@ -58,7 +58,7 @@ export const EXPERIENCES = [
     company: "PT HM Sampoerna Tbk.",
     link: "https://www.sampoerna.com",
     description: `I set up automated testing for both web and Android applications, ensuring product quality through comprehensive end-to-end testing flows. My focus is on catching issues early in the development process so they don’t make it to production.`,
-    skills: ["WebdriverIO", "Jenkins", "JavaScript"],
+    skills: ["JavaScript", "WebdriverIO", "Jenkins"],
   },
   {
     period: "Sep 2018 — Oct 2020",
@@ -66,7 +66,7 @@ export const EXPERIENCES = [
     company: "Genesys Integrated Indonesia",
     link: "https://genesysindonesia.com",
     description: `I build web applications using **Vue.js and Laravel**, creating reusable components and clean, intuitive user interfaces. I also support product needs by delivering reliable features that align with overall functionality and user experience.`,
-    skills: ["Vue.js", "JavaScript", "Laravel", "MySQL"],
+    skills: ["JavaScript", "Vue.js", "Laravel", "MySQL"],
   },
 ];
 
@@ -76,7 +76,7 @@ export const PROJECTS = [
     description:
       "Part of a development team building a AI content generator platform. Focused on engineering high-performance Next.js interfaces and scaling backend services with NestJS to handle content generation.",
     image: "/projects/mager-ai.png",
-    tags: ["Next.js", "TypeScript", "NestJS", "PostgreSQL"],
+    tags: ["TypeScript", "Next.js", "NestJS", "PostgreSQL"],
     github: null,
     demo: "https://mageran.ai/home",
   },
@@ -85,7 +85,7 @@ export const PROJECTS = [
     description:
       "Part of a development team building a AI-powered video clipping platform. Focused on engineering high-performance Next.js interfaces and scaling backend services with NestJS to handle content generation.",
     image: "/projects/mager-klip.png",
-    tags: ["Next.js", "TypeScript", "NestJS", "PostgreSQL"],
+    tags: ["TypeScript", "Next.js", "NestJS", "PostgreSQL"],
     github: null,
     demo: "https://klip.mageran.ai",
   },
@@ -94,7 +94,7 @@ export const PROJECTS = [
     description:
       "Part of a development team building a unified LMS ecosystem. Developed scalable frontend structures with Next.js and TypeScript, delivering a high-performance and accessible platform through consistent, reusable UI components.",
     image: "/projects/nativy.png",
-    tags: ["Next.js", "TypeScript"],
+    tags: ["TypeScript", "Next.js", "NestJS", "PostgreSQL"],
     github: null,
     demo: "https://nativeacademy.id",
   },
@@ -103,17 +103,8 @@ export const PROJECTS = [
     description:
       "AI-powered Telegram bot that analyzes food photos and estimates calories instantly. Simply send a meal photo and receive an estimated calorie breakdown in seconds.",
     image: "/projects/kalori-bot.png",
-    tags: ["Telegram Bot", "Node.js", "Telegraf", "OpenRouter"],
+    tags: ["Telegram Bot", "JavaScript", "Node.js", "Telegraf", "OpenRouter"],
     github: "https://github.com/ayisrhmn/calorie-telegram-bot",
     demo: "https://t.me/id_kalori_bot",
   },
-  // {
-  //   title: "IngreAI — Ingredients Intelligence",
-  //   description:
-  //     "AI-Powered Ingredient Scanner & Recipe Generator. Scan your ingredients and get smart recipe suggestions instantly.",
-  //   image: "/projects/ingre-ai.jpg",
-  //   tags: ["Next.js", "TypeScript", "Gemini 2.0 Flash Lite"],
-  //   github: "https://github.com/ayisrhmn/ingre-ai",
-  //   demo: "https://ingre-ai.vercel.app",
-  // },
 ];

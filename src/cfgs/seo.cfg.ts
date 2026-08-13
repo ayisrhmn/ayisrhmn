@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 
-export const APP_TITLE = "Muhammad Fariz Rahman — Frontend-leaning Full-stack Developer";
+export const APP_TITLE = "Muhammad Fariz Rahman — Full-stack Developer";
 export const APP_DESC = "My portfolio website showcasing my projects and experience";
 export const APP_URL = "https://ayisrhmn.vercel.app";
 export const APP_NAME = "Muhammad Fariz Rahman";
@@ -135,9 +135,8 @@ export const JSON_LD = {
         width: 1200,
         height: 630,
       },
-      jobTitle: "Frontend-leaning Full-stack Developer",
-      description:
-        "Frontend-leaning Full-stack Developer specializing in React, Next.js, and TypeScript",
+      jobTitle: "Full-stack Developer",
+      description: "Full-stack Developer specializing in TypeScript, React, and Node.js",
       knowsAbout: [
         "Frontend Development",
         "React",
