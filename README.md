@@ -14,7 +14,7 @@ React • Next.js • Vue • Nuxt • Tailwind CSS
 React Native • Ionic  
 
 **Backend**  
-NestJS • Fastify • Express  
+NestJS • Express • Fastify
 
 **Databases**  
 PostgreSQL • MySQL • MongoDB  
