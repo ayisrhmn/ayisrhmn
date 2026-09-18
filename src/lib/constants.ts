@@ -41,7 +41,7 @@ export const EXPERIENCES = [
     title: "Full-stack Developer",
     company: "Native Productions",
     link: "https://nvpdev.tech",
-    description: `I build modern web and mobile applications end-to-end using React, Next.js, Ionic, and NestJS, transforming product ideas into clean and intuitive user interfaces backed by solid backend logic. I design and ship REST APIs and database schemas with PostgreSQL and Prisma, and focus on optimizing performance across both frontend and backend to ensure applications run smoothly even at scale. I collaborate closely with C-Level, engineers, and product teams to deliver reliable, high-quality features.`,
+    description: `I build modern web and mobile applications end-to-end using **React, Next.js, Ionic, and NestJS**, transforming product ideas into clean and intuitive user interfaces backed by solid backend logic. I design and ship REST APIs and database schemas with **PostgreSQL and Prisma**, and focus on optimizing performance across both frontend and backend to ensure applications run smoothly even at scale. I collaborate closely with C-Level, engineers, and product teams to deliver reliable, high-quality features.`,
     skills: ["TypeScript", "Next.js", "Ionic", "NestJS", "PostgreSQL"],
   },
   {
@@ -49,7 +49,7 @@ export const EXPERIENCES = [
     title: "Full-stack Engineer",
     company: "Tada",
     link: "https://usetada.com",
-    description: `I build and maintain web applications end-to-end for a gift card and loyalty platform, working across a distributed microservice architecture with Node.js, and Express to turn product requirements into reliable, well-scoped features. I design and ship REST APIs and database schemas with PostgreSQL and Sequelize, integrate third-party partners through clean and stable interfaces, and focus on optimizing performance and handling bulk data flows so services run smoothly even at scale. I collaborate closely with tech leads, QA, and product teams to deliver solid, high-quality features.`,
+    description: `I build and maintain web applications end-to-end for a gift card and loyalty platform, working across a distributed microservice architecture with **Node.js, and Express** to turn product requirements into reliable, well-scoped features. I design and ship REST APIs and database schemas with **PostgreSQL and Sequelize**, integrate third-party partners through clean and stable interfaces, and focus on optimizing performance and handling bulk data flows so services run smoothly even at scale. I collaborate closely with tech leads, QA, and product teams to deliver solid, high-quality features.`,
     skills: ["JavaScript", "Node.js", "PostgreSQL", "MongoDB"],
   },
   {
