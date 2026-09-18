@@ -15,7 +15,7 @@ export const SOCIAL_MEDIA_ICONS = {
 export const HERO = {
   headline: "Full-stack Developer",
   subHeadline:
-    "Based in Indonesia, building polished, reliable web experiences across the stack with TypeScript, React, Next.js, and Node.js.",
+    "Based in Indonesia, building polished, reliable web experiences across the stack with TypeScript, React, Next.js, and NestJS.",
 };
 
 export const SOCIAL_MEDIAS = [
@@ -41,8 +41,16 @@ export const EXPERIENCES = [
     title: "Full-stack Developer",
     company: "Native Productions",
     link: "https://nvpdev.tech",
-    description: `I build modern web and mobile applications using **React, Next.js, and Ionic**, transforming product ideas into clean and intuitive user interfaces. I focus on optimizing performance to ensure applications run smoothly even at scale, while collaborating closely with C-Level, backend engineers and product teams to deliver reliable, high-quality features.`,
+    description: `I build modern web and mobile applications end-to-end using React, Next.js, Ionic, and NestJS, transforming product ideas into clean and intuitive user interfaces backed by solid backend logic. I design and ship REST APIs and database schemas with PostgreSQL and Prisma, and focus on optimizing performance across both frontend and backend to ensure applications run smoothly even at scale. I collaborate closely with C-Level, engineers, and product teams to deliver reliable, high-quality features.`,
     skills: ["TypeScript", "Next.js", "Ionic", "NestJS", "PostgreSQL"],
+  },
+  {
+    period: "June 2026 — Present",
+    title: "Full-stack Engineer",
+    company: "Tada",
+    link: "https://usetada.com",
+    description: `I build and maintain web applications end-to-end for a gift card and loyalty platform, working across a distributed microservice architecture with Node.js, and Express to turn product requirements into reliable, well-scoped features. I design and ship REST APIs and database schemas with PostgreSQL and Sequelize, integrate third-party partners through clean and stable interfaces, and focus on optimizing performance and handling bulk data flows so services run smoothly even at scale. I collaborate closely with tech leads, QA, and product teams to deliver solid, high-quality features.`,
+    skills: ["JavaScript", "Node.js", "PostgreSQL", "MongoDB"],
   },
   {
     period: "Oct 2020 — Mar 2026",
@@ -97,6 +105,15 @@ export const PROJECTS = [
     tags: ["TypeScript", "Next.js", "NestJS", "PostgreSQL"],
     github: null,
     demo: "https://nativeacademy.id",
+  },
+  {
+    title: "MyFulus — Personal Finance Tracker",
+    description:
+      "Personal finance tracker — a mobile-first PWA for logging income and expenses, seeing a monthly summary, and breaking spending down by category. Built for personal use, but the data model is multi-user ready.",
+    image: "/projects/my-fulus.png",
+    tags: ["TypeScript", "Next.js", "Supabase"],
+    github: "https://github.com/ayisrhmn/my-fulus",
+    demo: "https://my-fulus.vercel.app",
   },
   {
     title: "KaloriBot — AI Calorie Estimator",

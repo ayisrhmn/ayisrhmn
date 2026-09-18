@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { SpeakerHighIcon, SpeakerSlashIcon } from "@phosphor-icons/react";
 import * as React from "react";
 
-const MUSIC_SRC = "/music/bakamitai_8bit_remix.mp3";
+const MUSIC_SRC = "/music/beneath-the-mask_instrumental.mp3";
 
 export function MusicToggle() {
   const audioRef = React.useRef<HTMLAudioElement | null>(null);
