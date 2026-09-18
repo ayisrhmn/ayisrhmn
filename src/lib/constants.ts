@@ -15,7 +15,7 @@ export const SOCIAL_MEDIA_ICONS = {
 export const HERO = {
   headline: "Full-stack Developer",
   subHeadline:
-    "Based in Indonesia, building polished, reliable web experiences across the stack with TypeScript, React, Next.js, and NestJS.",
+    "Based in Indonesia, building polished, reliable web experiences across the stack with TypeScript, React, Next.js, and Node.js.",
 };
 
 export const SOCIAL_MEDIAS = [
