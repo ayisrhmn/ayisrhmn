@@ -80,15 +80,6 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "Mager AI - Konten Mulus, Effort Minus",
-    description:
-      "Part of a development team building a AI content generator platform. Focused on engineering high-performance Next.js interfaces and scaling backend services with NestJS to handle content generation.",
-    image: "/projects/mager-ai.png",
-    tags: ["TypeScript", "Next.js", "NestJS", "PostgreSQL"],
-    github: null,
-    demo: "https://mageran.ai/home",
-  },
-  {
     title: "Mager Klip - Satu Video, Puluhan Klip Viral!",
     description:
       "Part of a development team building a AI-powered video clipping platform. Focused on engineering high-performance Next.js interfaces and scaling backend services with NestJS to handle content generation.",
@@ -96,6 +87,15 @@ export const PROJECTS = [
     tags: ["TypeScript", "Next.js", "NestJS", "PostgreSQL"],
     github: null,
     demo: "https://klip.mageran.ai",
+  },
+  {
+    title: "Mager AI - Konten Mulus, Effort Minus",
+    description:
+      "Part of a development team building a AI content generator platform. Focused on engineering high-performance Next.js interfaces and scaling backend services with NestJS to handle content generation.",
+    image: "/projects/mager-ai.png",
+    tags: ["TypeScript", "Next.js", "NestJS", "PostgreSQL"],
+    github: null,
+    demo: "https://mageran.ai/home",
   },
   {
     title: "Native Academy - Bantu kamu jago kerja secara digital",
