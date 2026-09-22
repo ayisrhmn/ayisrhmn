@@ -107,6 +107,15 @@ export const PROJECTS = [
     demo: "https://nativeacademy.id",
   },
   {
+    title: "Laundrin — Laundry management system",
+    description:
+      "Laundry management system — for managing orders, payments, customers, and daily laundry operations with dedicated admin and cashier/POS workflows.",
+    image: "/projects/laundrin.png",
+    tags: ["TypeScript", "Next.js", "NestJS", "PostgreSQL"],
+    github: "https://github.com/ayisrhmn/laundry-fe",
+    demo: "https://laundrin.vercel.app",
+  },
+  {
     title: "MyFulus — Personal Finance Tracker",
     description:
       "Personal finance tracker — a mobile-first PWA for logging income and expenses, seeing a monthly summary, and breaking spending down by category. Built for personal use, but the data model is multi-user ready.",
