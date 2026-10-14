@@ -1,12 +1,9 @@
 import { JSON_LD, METADATA_BASE } from "@/cfgs/seo.cfg";
-import { AnimatedBackground } from "@/components/ui/animated-background";
-import { MusicToggle } from "@/components/ui/music-toggle";
-import { Preloader } from "@/components/ui/preloader";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Press_Start_2P } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import type React from "react";
 import { Suspense } from "react";
 
@@ -22,12 +19,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const pressStart = Press_Start_2P({
-  variable: "--font-press-start",
-  subsets: ["latin"],
-  weight: "400",
-});
-
 export const metadata: Metadata = METADATA_BASE;
 
 export default function RootLayout({
@@ -41,22 +32,19 @@ export default function RootLayout({
         <link rel="canonical" href="https://ayisrhmn.vercel.app" />
       </head>
       <body
-        className={`font-sans ${geistSans.variable} ${geistMono.variable} ${pressStart.variable} antialiased`}
+        className={`font-sans ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_LD) }}
         />
-        <Preloader />
-        <AnimatedBackground />
         <ThemeProvider
           attribute="class"
-          defaultTheme="light"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
           <Suspense>{children}</Suspense>
-          <MusicToggle />
         </ThemeProvider>
         <Analytics />
         <SpeedInsights />

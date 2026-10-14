@@ -1,59 +1,50 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { SOCIAL_MEDIAS } from "@/lib/constants";
 import { ChatIcon, EnvelopeSimpleIcon } from "@phosphor-icons/react/dist/ssr";
+import { Reveal } from "../ui/reveal";
+import { Spotlight } from "../ui/spotlight";
 
 export function Contact() {
   const email = SOCIAL_MEDIAS?.find((v) => v?.name === "Email");
   const linkedIn = SOCIAL_MEDIAS?.find((v) => v?.name === "LinkedIn");
 
   return (
-    <section id="contact" className="pixel-section">
-      <div className="mx-auto max-w-3xl">
-        <Card className="pixel-corner-blocks relative">
-          <div
-            className="mx-5 grid grid-cols-8 gap-1 border-2 border-border bg-background p-1 md:mx-6"
-            aria-hidden="true"
-          >
-            {Array.from({ length: 8 }).map((_, index) => (
-              <span
-                key={index}
-                className={`h-3 border border-border ${
-                  index % 3 === 0 ? "bg-accent" : index % 2 === 0 ? "bg-secondary" : "bg-primary"
-                }`}
-              />
-            ))}
+    <section id="contact" className="section">
+      <Reveal className="section-shell">
+        <p className="section-label mb-6" aria-hidden="true">
+          04 — Contact
+        </p>
+        <Spotlight className="rounded-lg border border-border bg-card p-6 transition-colors md:p-10">
+          <div className="text-2xl font-semibold tracking-tight md:text-3xl">
+            Let's Work Together
+            <span className="cursor-blink font-mono font-normal text-highlight" aria-hidden="true">
+              _
+            </span>
           </div>
-          <CardHeader className="text-center">
-            <CardTitle className="text-2xl leading-relaxed text-primary md:text-3xl">
-              Let's Work Together
-            </CardTitle>
-            <CardDescription className="pt-2 text-base leading-7 md:text-lg">
-              I'm always open to discussing new projects, creative ideas, or opportunities to be
-              part of your vision.
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <div className="pixel-inner-panel flex flex-col justify-center gap-4 p-4 sm:flex-row">
-              <Button size="lg" asChild className="gap-2">
-                <a href={email?.link} target="_self">
-                  <EnvelopeSimpleIcon className="w-5 h-5" />
-                  Email Me
-                </a>
-              </Button>
-              <Button size="lg" variant="outline" asChild className="gap-2 bg-transparent">
-                <a href={linkedIn?.link} target="_blank" rel="noopener noreferrer">
-                  <ChatIcon className="w-5 h-5" />
-                  LinkedIn
-                </a>
-              </Button>
-            </div>
-            <p className="pixel-text pt-4 text-center text-[9px] text-muted-foreground">
-              Usually responds within 24 hours
-            </p>
-          </CardContent>
-        </Card>
-      </div>
+          <div className="mt-3 max-w-lg leading-relaxed text-muted-foreground">
+            I'm always open to discussing new projects, creative ideas, or opportunities to be part
+            of your vision.
+          </div>
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <Button asChild>
+              <a href={email?.link} target="_self">
+                <EnvelopeSimpleIcon />
+                Email Me
+              </a>
+            </Button>
+            <Button variant="outline" asChild>
+              <a href={linkedIn?.link} target="_blank" rel="noopener noreferrer">
+                <ChatIcon />
+                LinkedIn
+              </a>
+            </Button>
+          </div>
+          <p className="mt-6 flex items-center gap-2 font-mono text-xs text-subtle-foreground">
+            <span className="size-1.5 rounded-full bg-highlight" aria-hidden="true" />
+            Usually responds within 24 hours
+          </p>
+        </Spotlight>
+      </Reveal>
     </section>
   );
 }

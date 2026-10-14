@@ -5,26 +5,23 @@ import * as React from "react";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "pixel-text pixel-press inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-none border-[3px] text-[10px] font-normal disabled:pointer-events-none disabled:translate-x-1 disabled:translate-y-1 disabled:opacity-60 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:ring-4 focus-visible:ring-ring/70 aria-invalid:ring-destructive/30 aria-invalid:border-destructive",
+  "inline-flex shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 [&_svg]:shrink-0 outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background aria-invalid:ring-destructive/30",
   {
     variants: {
       variant: {
-        default: "border-border bg-primary text-primary-foreground shadow-[4px_4px_0_var(--pixel-shadow)]",
-        destructive:
-          "border-border bg-destructive text-destructive-foreground shadow-[4px_4px_0_var(--pixel-shadow)]",
+        default: "bg-primary text-primary-foreground hover:bg-primary/85",
+        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline:
-          "border-border bg-background text-foreground shadow-[4px_4px_0_var(--pixel-shadow)] hover:bg-accent hover:text-accent-foreground",
-        secondary:
-          "border-border bg-secondary text-secondary-foreground shadow-[4px_4px_0_var(--pixel-shadow)]",
-        ghost:
-          "border-transparent bg-transparent text-foreground shadow-none hover:border-border hover:bg-muted hover:shadow-[4px_4px_0_var(--pixel-shadow)]",
-        link: "border-transparent bg-transparent p-0 text-primary shadow-none underline-offset-4 hover:underline",
+          "border border-border bg-background/60 text-foreground hover:border-border-strong hover:bg-accent",
+        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+        ghost: "text-muted-foreground hover:bg-accent hover:text-foreground",
+        link: "p-0 text-foreground underline-offset-4 hover:underline",
       },
       size: {
-        default: "min-h-10 px-4 py-2 has-[>svg]:px-3",
-        sm: "min-h-9 gap-1.5 px-3 py-2 text-[9px] has-[>svg]:px-2.5",
-        lg: "min-h-12 px-5 py-3 text-[10px] md:text-xs has-[>svg]:px-4",
-        icon: "size-10 p-0",
+        default: "h-9 px-4 has-[>svg]:px-3",
+        sm: "h-8 gap-1.5 px-3 text-xs has-[>svg]:px-2.5",
+        lg: "h-11 px-5 has-[>svg]:px-4",
+        icon: "size-9",
       },
     },
     defaultVariants: {

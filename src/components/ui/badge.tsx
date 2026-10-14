@@ -5,16 +5,14 @@ import * as React from "react";
 import { cn } from "@/lib/utils";
 
 const badgeVariants = cva(
-  "pixel-text inline-flex w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-none border-2 px-2.5 py-1 text-[9px] font-semibold leading-relaxed whitespace-nowrap shadow-[3px_3px_0_var(--pixel-shadow)] transition-[color,box-shadow,transform] duration-100 ease-linear [&>svg]:size-3 [&>svg]:pointer-events-none focus-visible:ring-4 focus-visible:ring-ring/60 aria-invalid:border-destructive",
+  "inline-flex w-fit shrink-0 items-center justify-center gap-1 overflow-hidden whitespace-nowrap rounded-md border px-2 py-0.5 font-mono text-xs transition-colors [&>svg]:pointer-events-none [&>svg]:size-3 focus-visible:ring-2 focus-visible:ring-ring aria-invalid:border-destructive",
   {
     variants: {
       variant: {
-        default: "border-border bg-primary text-primary-foreground",
-        secondary: "border-border bg-secondary text-secondary-foreground",
-        destructive:
-          "border-border bg-destructive text-destructive-foreground focus-visible:ring-destructive/30",
-        outline:
-          "border-border bg-background text-foreground [a&]:hover:bg-accent [a&]:hover:text-accent-foreground",
+        default: "border-transparent bg-primary text-primary-foreground",
+        secondary: "border-border bg-muted/60 text-muted-foreground",
+        destructive: "border-transparent bg-destructive text-destructive-foreground",
+        outline: "border-border text-foreground [a&]:hover:bg-accent",
       },
     },
     defaultVariants: {
