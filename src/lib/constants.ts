@@ -37,20 +37,29 @@ When I’m not coding, I usually spend my time learning new web technologies, re
 
 export const EXPERIENCES = [
   {
-    period: "May 2024 — Present",
-    title: "Full-stack Developer",
-    company: "Native Productions",
-    link: "https://nvpdev.tech",
-    description: `I build modern web and mobile applications end-to-end using **React, Next.js, Ionic, and NestJS**, transforming product ideas into clean and intuitive user interfaces backed by solid backend logic. I design and ship REST APIs and database schemas with **PostgreSQL and Prisma**, and focus on optimizing performance across both frontend and backend to ensure applications run smoothly even at scale. I collaborate closely with C-Level, engineers, and product teams to deliver reliable, high-quality features.`,
-    skills: ["TypeScript", "Next.js", "Ionic", "NestJS", "PostgreSQL"],
-  },
-  {
-    period: "June 2026 — Present",
+    period: "Jun 2026 — Present",
     title: "Full-stack Engineer",
     company: "Tada",
     link: "https://usetada.com",
     description: `I build and maintain web applications end-to-end for a gift card and loyalty platform, working across a distributed microservice architecture with **Node.js, and Express** to turn product requirements into reliable, well-scoped features. I design and ship REST APIs and database schemas with **PostgreSQL and Sequelize**, integrate third-party partners through clean and stable interfaces, and focus on optimizing performance and handling bulk data flows so services run smoothly even at scale. I collaborate closely with tech leads, QA, and product teams to deliver solid, high-quality features.`,
-    skills: ["JavaScript", "Node.js", "PostgreSQL", "MongoDB"],
+    skills: [
+      "TypeScript",
+      "JavaScript",
+      "React.js",
+      "Vue.js",
+      "Express.js",
+      "Golang",
+      "PostgreSQL",
+      "MongoDB",
+    ],
+  },
+  {
+    period: "May 2024 — Nov 2026",
+    title: "Full-stack Developer",
+    company: "Native Productions",
+    link: "https://nvpdev.tech",
+    description: `I build modern web and mobile applications end-to-end using **React, Next.js, Ionic, and NestJS**, transforming product ideas into clean and intuitive user interfaces backed by solid backend logic. I design and ship REST APIs and database schemas with **PostgreSQL and Prisma**, and focus on optimizing performance across both frontend and backend to ensure applications run smoothly even at scale. I collaborate closely with C-Level, engineers, and product teams to deliver reliable, high-quality features.`,
+    skills: ["TypeScript", "Next.js", "Ionic", "Express.js", "NestJS", "PostgreSQL"],
   },
   {
     period: "Oct 2020 — Mar 2026",
@@ -58,7 +67,7 @@ export const EXPERIENCES = [
     company: "Kano Solution",
     link: "https://kanosolution.com",
     description: `I develop and scale web applications across multiple projects, focusing on building and maintaining clean, scalable frontend architectures. I work within the **Vue.js, Nuxt.js, and React ecosystems**, ensuring high code quality while keeping performance and long-term maintainability in check.`,
-    skills: ["TypeScript", "Vue.js", "Nuxt.js", "React Native", "Go", "MongoDB"],
+    skills: ["TypeScript", "Vue.js", "Nuxt.js", "React Native", "Golang", "MongoDB"],
   },
   {
     period: "Nov 2023 — Oct 2024",
