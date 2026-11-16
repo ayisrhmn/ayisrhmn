@@ -6,19 +6,18 @@ import { Header } from "@/components/sections/header";
 import { Hero } from "@/components/sections/hero";
 import { Projects } from "@/components/sections/projects";
 
-export const dynamic = "force-dynamic";
-
 export default function Home() {
   return (
-    <main className="relative isolate min-h-screen">
-      <div className="hero-backdrop" aria-hidden="true" />
+    <>
       <Header />
-      <Hero />
-      <About />
-      <Experience />
-      <Projects />
-      <Contact />
+      <main className="shell">
+        <Hero />
+        <About />
+        <Experience />
+        <Projects />
+        <Contact />
+      </main>
       <Footer />
-    </main>
+    </>
   );
 }

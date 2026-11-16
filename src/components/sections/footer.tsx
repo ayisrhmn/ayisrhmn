@@ -1,34 +1,34 @@
-import { SOCIAL_MEDIA_ICONS, SOCIAL_MEDIAS } from "@/lib/constants";
+import { HERO, SOCIAL_MEDIAS } from "@/lib/constants";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-border/60 px-5 py-8 sm:px-8">
-      <div className="section-shell flex flex-col items-center justify-between gap-6 md:flex-row">
-        <div className="space-y-1 text-center md:text-left">
-          <p className="font-mono text-xs text-muted-foreground">
-            © {currentYear} Muhammad Fariz Rahman. All rights reserved.
+    <footer className="border-t border-border">
+      <div className="shell flex flex-wrap items-center justify-between gap-x-8 gap-y-2 py-5 font-mono text-[12.5px] text-subtle-foreground">
+        <div className="flex flex-col gap-1">
+          <p className="text-muted-foreground">
+            © {currentYear} {HERO.name}. All rights reserved.
           </p>
-          <p className="text-xs text-subtle-foreground">Built with Next.js and Tailwind CSS</p>
+          <p>Built with Next.js and Tailwind CSS</p>
         </div>
-        <div className="flex flex-wrap justify-center gap-1">
-          {SOCIAL_MEDIAS?.map((item, index) => {
-            const Icon = SOCIAL_MEDIA_ICONS[item?.name as keyof typeof SOCIAL_MEDIA_ICONS];
+        <ul className="flex flex-wrap gap-x-6">
+          {SOCIAL_MEDIAS.map((item) => {
+            const isEmail = item.name === "Email";
             return (
-              <a
-                key={index}
-                href={item?.link}
-                target={item?.name === "Email" ? "_self" : "_blank"}
-                rel="noopener noreferrer"
-                className="flex size-9 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
-                aria-label={item?.name}
-              >
-                {Icon && <Icon className="size-[18px]" />}
-              </a>
+              <li key={item.name}>
+                <a
+                  href={item.link}
+                  target={isEmail ? undefined : "_blank"}
+                  rel={isEmail ? undefined : "noopener noreferrer"}
+                  className="text-link"
+                >
+                  {item.name}
+                </a>
+              </li>
             );
           })}
-        </div>
+        </ul>
       </div>
     </footer>
   );

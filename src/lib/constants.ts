@@ -1,33 +1,51 @@
-import {
-  EnvelopeSimpleIcon,
-  GithubLogoIcon,
-  InstagramLogoIcon,
-  LinkedinLogoIcon,
-} from "@phosphor-icons/react/dist/ssr";
-
-export const SOCIAL_MEDIA_ICONS = {
-  GitHub: GithubLogoIcon,
-  LinkedIn: LinkedinLogoIcon,
-  Instagram: InstagramLogoIcon,
-  Email: EnvelopeSimpleIcon,
-};
-
 export const HERO = {
-  headline: "Full-stack Developer",
+  name: "Muhammad Fariz Rahman",
+  headline: ["Software", "Engineer"],
   subHeadline:
-    "Based in Indonesia, building polished, reliable web experiences across the stack with TypeScript, React, Next.js, and Node.js.",
+    "Based in Indonesia, building polished, reliable web products across the full stack with TypeScript, React, Next.js, and Node.js.",
 };
 
 export const SOCIAL_MEDIAS = [
-  { name: "Instagram", link: "https://instagram.com/ayisrhmn" },
-  { name: "Email", link: "mailto:farizrahman30@gmail.com" },
   { name: "GitHub", link: "https://github.com/ayisrhmn" },
   { name: "LinkedIn", link: "https://linkedin.com/in/ayisrhmn" },
+  { name: "Instagram", link: "https://instagram.com/ayisrhmn" },
+  { name: "Email", link: "mailto:farizrahman30@gmail.com" },
 ];
 
-export const ABOUT = `I'm **Muhammad Fariz Rahman** — a Full-stack Developer based in Indonesia.
+export const STACK_SPINE = "TypeScript across the stack";
 
-I’m passionate about building accessible, fast, and visually refined digital experiences that balance thoughtful design with solid engineering. Over the past **7+ years**, I’ve built seamless experiences across web and mobile using **React**, **Next.js**, and **Ionic**, while also working with **React Native** and **Nuxt**.
+export const STACK_LAYERS = [
+  {
+    title: "Interface",
+    scope: "Web · Mobile",
+    items: ["React", "Next.js", "Vue", "Nuxt", "Ionic", "React Native"],
+    // Label of the connector drawn between this layer and the next one.
+    link: "REST APIs",
+  },
+  {
+    title: "Services",
+    scope: "APIs · Integrations",
+    items: ["Node.js", "NestJS", "Express", "Fastify", "Go"],
+    link: "Schemas & queries",
+  },
+  {
+    title: "Data",
+    scope: "SQL · NoSQL",
+    items: ["PostgreSQL", "MySQL", "MongoDB", "Prisma", "Sequelize"],
+    link: null,
+  },
+];
+
+export const FACTS = [
+  { label: "Experience", value: "7+ years" },
+  { label: "Currently", value: "Full-stack Engineer at Tada" },
+  { label: "Based in", value: "Indonesia" },
+  { label: "Platforms", value: "Web and mobile" },
+];
+
+export const ABOUT_LEAD = "I'm Muhammad Fariz Rahman — a Software Engineer based in Indonesia.";
+
+export const ABOUT = `I’m passionate about building accessible, fast, and visually refined digital experiences that balance thoughtful design with solid engineering. Over the past **7+ years**, I’ve built seamless experiences across web and mobile using **React**, **Next.js**, and **Ionic**, while also working with **React Native** and **Nuxt**.
 
 Alongside my frontend experience, I’ve worked across the backend with **NestJS**, **Express**, and **Fastify**, as well as databases like **PostgreSQL**, **MySQL**, and **MongoDB**. This has given me a broader perspective on full-stack development, from building polished user interfaces to designing APIs, working with data, and thinking through system architecture.
 
@@ -35,13 +53,15 @@ My approach to development combines **attention to detail**, **performance**, an
 
 When I’m not coding, I usually spend my time learning new web technologies, refining side projects, or catching up with games and chill playlists.`;
 
+export const EXPERIENCE_RANGE = "2018 — Present";
+
 export const EXPERIENCES = [
   {
     period: "Jun 2026 — Present",
     title: "Full-stack Engineer",
     company: "Tada",
     link: "https://usetada.com",
-    description: `I build and maintain web applications end-to-end for a gift card and loyalty platform, working across a distributed microservice architecture with **Node.js, and Express** to turn product requirements into reliable, well-scoped features. I design and ship REST APIs and database schemas with **PostgreSQL and Sequelize**, integrate third-party partners through clean and stable interfaces, and focus on optimizing performance and handling bulk data flows so services run smoothly even at scale. I collaborate closely with tech leads, QA, and product teams to deliver solid, high-quality features.`,
+    description: `I build and maintain web applications end-to-end for a gift card and loyalty platform, working across a distributed microservice architecture with **Node.js and Express** to turn product requirements into reliable, well-scoped features. I design and ship REST APIs and database schemas with **PostgreSQL and Sequelize**, integrate third-party partners through clean and stable interfaces, and focus on optimizing performance and handling bulk data flows so services run smoothly even at scale. I collaborate closely with tech leads, QA, and product teams to deliver solid, high-quality features.`,
     skills: [
       "TypeScript",
       "JavaScript",
@@ -89,57 +109,69 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "Mager Klip - Satu Video, Puluhan Klip Viral!",
+    name: "Mager Klip",
+    tagline: "Satu Video, Puluhan Klip Viral!",
     description:
-      "Part of a development team building a AI-powered video clipping platform. Focused on engineering high-performance Next.js interfaces and scaling backend services with NestJS to handle content generation.",
+      "Part of a development team building an AI-powered video clipping platform. Focused on engineering high-performance Next.js interfaces and scaling backend services with NestJS to handle content generation.",
     image: "/projects/mager-klip.png",
     tags: ["TypeScript", "Next.js", "NestJS", "PostgreSQL"],
     github: null,
     demo: "https://klip.mageran.ai",
+    host: "klip.mageran.ai",
   },
   {
-    title: "Mager AI - Konten Mulus, Effort Minus",
+    name: "Mager AI",
+    tagline: "Konten Mulus, Effort Minus",
     description:
-      "Part of a development team building a AI content generator platform. Focused on engineering high-performance Next.js interfaces and scaling backend services with NestJS to handle content generation.",
+      "Part of a development team building an AI content generator platform. Focused on engineering high-performance Next.js interfaces and scaling backend services with NestJS to handle content generation.",
     image: "/projects/mager-ai.png",
     tags: ["TypeScript", "Next.js", "NestJS", "PostgreSQL"],
     github: null,
     demo: "https://mageran.ai/home",
+    host: "mageran.ai",
   },
   {
-    title: "Native Academy - Bantu kamu jago kerja secara digital",
+    name: "Native Academy",
+    tagline: "Bantu kamu jago kerja secara digital",
     description:
       "Part of a development team building a unified LMS ecosystem. Developed scalable frontend structures with Next.js and TypeScript, delivering a high-performance and accessible platform through consistent, reusable UI components.",
     image: "/projects/nativy.png",
     tags: ["TypeScript", "Next.js", "NestJS", "PostgreSQL"],
     github: null,
     demo: "https://nativeacademy.id",
+    host: "nativeacademy.id",
   },
   {
-    title: "Laundrin — Laundry management system",
+    name: "Laundrin",
+    tagline: "Laundry management system",
     description:
       "Laundry management system — for managing orders, payments, customers, and daily laundry operations with dedicated admin and cashier/POS workflows.",
     image: "/projects/laundrin.png",
     tags: ["TypeScript", "Next.js", "NestJS", "PostgreSQL"],
     github: "https://github.com/ayisrhmn/laundry-fe",
     demo: "https://laundrin.vercel.app",
+    host: "laundrin.vercel.app",
   },
   {
-    title: "MyFulus — Personal Finance Tracker",
+    name: "MyFulus",
+    tagline: "Personal Finance Tracker",
     description:
       "Personal finance tracker — a mobile-first PWA for logging income and expenses, seeing a monthly summary, and breaking spending down by category. Built for personal use, but the data model is multi-user ready.",
     image: "/projects/my-fulus.png",
     tags: ["TypeScript", "Next.js", "Supabase"],
     github: "https://github.com/ayisrhmn/my-fulus",
     demo: "https://my-fulus.vercel.app",
+    host: "my-fulus.vercel.app",
   },
   {
-    title: "KaloriBot — AI Calorie Estimator",
+    name: "KaloriBot",
+    tagline: "AI Calorie Estimator",
     description:
       "AI-powered Telegram bot that analyzes food photos and estimates calories instantly. Simply send a meal photo and receive an estimated calorie breakdown in seconds.",
     image: "/projects/kalori-bot.png",
-    tags: ["Telegram Bot", "JavaScript", "Node.js", "Telegraf", "OpenRouter"],
+    tags: ["Telegram Bot", "Node.js", "Telegraf", "OpenRouter"],
     github: "https://github.com/ayisrhmn/calorie-telegram-bot",
     demo: "https://t.me/id_kalori_bot",
+    host: "t.me/id_kalori_bot",
   },
 ];

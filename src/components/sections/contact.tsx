@@ -1,49 +1,45 @@
-import { Button } from "@/components/ui/button";
 import { SOCIAL_MEDIAS } from "@/lib/constants";
-import { ChatIcon, EnvelopeSimpleIcon } from "@phosphor-icons/react/dist/ssr";
+import { ArrowUpRightIcon, EnvelopeSimpleIcon } from "@phosphor-icons/react/dist/ssr";
 import { Reveal } from "../ui/reveal";
-import { Spotlight } from "../ui/spotlight";
+import { SectionHeading } from "../ui/section-heading";
 
 export function Contact() {
-  const email = SOCIAL_MEDIAS?.find((v) => v?.name === "Email");
-  const linkedIn = SOCIAL_MEDIAS?.find((v) => v?.name === "LinkedIn");
+  const email = SOCIAL_MEDIAS.find((item) => item.name === "Email");
+  const linkedIn = SOCIAL_MEDIAS.find((item) => item.name === "LinkedIn");
 
   return (
     <section id="contact" className="section">
-      <Reveal className="section-shell">
-        <p className="section-label mb-6" aria-hidden="true">
-          04 — Contact
+      <SectionHeading index="04" title="Contact" compact />
+      <Reveal className="flex flex-col items-start gap-7 border border-border-strong bg-card p-[clamp(1.75rem,6vw,4.5rem)]">
+        <p className="font-display text-[clamp(2.5rem,6.4vw,5.75rem)] leading-[0.96] font-bold tracking-[-0.045em]">
+          Let&apos;s work together
+          <span aria-hidden="true" className="text-highlight">
+            .
+          </span>
         </p>
-        <Spotlight className="rounded-lg border border-border bg-card p-6 transition-colors md:p-10">
-          <div className="text-2xl font-semibold tracking-tight md:text-3xl">
-            Let's Work Together
-            <span className="cursor-blink font-mono font-normal text-highlight" aria-hidden="true">
-              _
-            </span>
-          </div>
-          <div className="mt-3 max-w-lg leading-relaxed text-muted-foreground">
-            I'm always open to discussing new projects, creative ideas, or opportunities to be part
-            of your vision.
-          </div>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <Button asChild>
-              <a href={email?.link} target="_self">
-                <EnvelopeSimpleIcon />
-                Email Me
-              </a>
-            </Button>
-            <Button variant="outline" asChild>
-              <a href={linkedIn?.link} target="_blank" rel="noopener noreferrer">
-                <ChatIcon />
-                LinkedIn
-              </a>
-            </Button>
-          </div>
-          <p className="mt-6 flex items-center gap-2 font-mono text-xs text-subtle-foreground">
-            <span className="size-1.5 rounded-full bg-highlight" aria-hidden="true" />
-            Usually responds within 24 hours
-          </p>
-        </Spotlight>
+        <p className="max-w-[35rem] text-lg leading-[1.6] text-pretty text-muted-foreground">
+          I&apos;m always open to discussing new projects, creative ideas, or opportunities to be
+          part of your vision.
+        </p>
+        <div className="flex flex-wrap gap-3">
+          <a href={email?.link} className="btn btn-primary">
+            <EnvelopeSimpleIcon aria-hidden="true" className="size-4" />
+            Email me
+          </a>
+          <a
+            href={linkedIn?.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-outline"
+          >
+            LinkedIn
+            <ArrowUpRightIcon aria-hidden="true" className="size-3" />
+          </a>
+        </div>
+        <p className="flex items-center gap-2.5 font-mono text-[13px] text-subtle-foreground">
+          <span aria-hidden="true" className="size-2 bg-highlight" />
+          Usually responds within 24 hours
+        </p>
       </Reveal>
     </section>
   );

@@ -1,36 +1,33 @@
-import Link from "next/link";
+import { Logo } from "../ui/logo";
 import { ThemeToggle } from "../ui/theme-toggle";
 
 const NAV_LINKS = [
-  { label: "about", href: "#about" },
-  { label: "work", href: "#experience" },
-  { label: "projects", href: "#projects" },
-  { label: "contact", href: "#contact" },
+  { label: "About", href: "#about" },
+  { label: "Experience", href: "#experience" },
+  { label: "Projects", href: "#projects" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 px-5 backdrop-blur-md sm:px-8">
-      <div className="section-shell flex h-14 items-center justify-between gap-4">
-        <Link
-          href="/"
-          className="font-mono text-xs text-foreground transition-colors hover:text-highlight"
+    <header className="sticky top-0 z-50 border-b border-border bg-background">
+      <div className="shell flex min-h-16 items-center justify-between gap-6">
+        <a
+          href="#top"
+          aria-label="Muhammad Fariz Rahman, back to top"
+          className="flex min-h-11 items-center"
         >
-          ~/ayisrhmn
-        </Link>
-        <div className="flex items-center gap-4">
-          <nav className="hidden items-center font-mono text-xs text-subtle-foreground sm:flex">
-            {NAV_LINKS.map((link, index) => (
-              <span key={link.href} className="flex items-center">
-                {index > 0 && (
-                  <span className="px-2" aria-hidden="true">
-                    ·
-                  </span>
-                )}
-                <a href={link.href} className="transition-colors hover:text-foreground">
-                  {link.label}
-                </a>
-              </span>
+          <Logo className="size-[30px]" />
+        </a>
+        <div className="flex items-center gap-1">
+          <nav
+            aria-label="Sections"
+            className="hidden items-center font-mono text-[13px] text-muted-foreground sm:flex"
+          >
+            {NAV_LINKS.map((link) => (
+              <a key={link.href} href={link.href} className="text-link px-3">
+                {link.label}
+              </a>
             ))}
           </nav>
           <ThemeToggle />
