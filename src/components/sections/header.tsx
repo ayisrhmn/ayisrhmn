@@ -1,5 +1,6 @@
 import { Logo } from "../ui/logo";
 import { ThemeToggle } from "../ui/theme-toggle";
+import { HeaderNav } from "./header-nav";
 
 const NAV_LINKS = [
   { label: "About", href: "#about" },
@@ -20,16 +21,7 @@ export function Header() {
           <Logo className="size-[30px]" />
         </a>
         <div className="flex items-center gap-1">
-          <nav
-            aria-label="Sections"
-            className="hidden items-center font-mono text-[13px] text-muted-foreground sm:flex"
-          >
-            {NAV_LINKS.map((link) => (
-              <a key={link.href} href={link.href} className="text-link px-3">
-                {link.label}
-              </a>
-            ))}
-          </nav>
+          <HeaderNav links={NAV_LINKS} />
           <ThemeToggle />
         </div>
       </div>

@@ -1,6 +1,5 @@
 import { SOCIAL_MEDIAS } from "@/lib/constants";
 import { ArrowUpRightIcon, EnvelopeSimpleIcon } from "@phosphor-icons/react/dist/ssr";
-import { Reveal } from "../ui/reveal";
 import { SectionHeading } from "../ui/section-heading";
 
 export function Contact() {
@@ -10,7 +9,7 @@ export function Contact() {
   return (
     <section id="contact" className="section">
       <SectionHeading index="04" title="Contact" compact />
-      <Reveal className="flex flex-col items-start gap-7 border border-border-strong bg-card p-[clamp(1.75rem,6vw,4.5rem)]">
+      <div className="reveal flex flex-col items-start gap-7 border border-border-strong bg-card p-[clamp(1.75rem,6vw,4.5rem)]">
         <p className="font-display text-[clamp(2.5rem,6.4vw,5.75rem)] leading-[0.96] font-bold tracking-[-0.045em]">
           Let&apos;s work together
           <span aria-hidden="true" className="text-highlight">
@@ -40,7 +39,7 @@ export function Contact() {
           <span aria-hidden="true" className="size-2 bg-highlight" />
           Usually responds within 24 hours
         </p>
-      </Reveal>
+      </div>
     </section>
   );
 }

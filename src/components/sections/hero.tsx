@@ -1,20 +1,53 @@
-import { FACTS, HERO, SOCIAL_MEDIAS, STACK_LAYERS, STACK_SPINE } from "@/lib/constants";
+import {
+  FACTS,
+  HERO,
+  SOCIAL_MEDIAS,
+  STACK_DESCRIPTIONS,
+  STACK_LAYERS,
+  STACK_SPINE,
+} from "@/lib/constants";
+import { TECH_ITEMS, techKey } from "@/lib/tech";
 import {
   ArrowRightIcon,
   ArrowsDownUpIcon,
   ArrowUpRightIcon,
 } from "@phosphor-icons/react/dist/ssr";
 
+// Caption line per technology in the diagram, shown on hover or focus.
+const TECH_USAGE = TECH_ITEMS.map((item) => ({
+  key: techKey(item),
+  text: STACK_DESCRIPTIONS[item] ? `${item} — ${STACK_DESCRIPTIONS[item]}` : item,
+}));
+
+// One rule set per technology: hovering or focusing a chip swaps the caption and highlights
+// the experience rows and project cards tagged with the same key. Keys are plain identifiers.
+const TECH_LINK_CSS = TECH_USAGE.map(({ key }) => {
+  const active = `[data-tech=${key}]:is(:hover,:focus)`;
+  return (
+    `.stack:has(${active}) [data-cap=${key}]{display:inline}` +
+    `body:has(.stack ${active}) [data-techs~=${key}] h3{color:var(--highlight)}`
+  );
+}).join("");
+
 function StackDiagram() {
   return (
-    <figure className="enter flex min-w-0 flex-[2_1_400px] flex-col gap-3 [animation-delay:160ms]">
+    <figure className="stack enter flex min-w-0 flex-[2_1_400px] flex-col gap-3 [animation-delay:160ms]">
+      <style dangerouslySetInnerHTML={{ __html: TECH_LINK_CSS }} />
       <div className="flex border border-border-strong bg-card">
         <div className="flex w-10 shrink-0 items-center justify-center bg-highlight">
           <span className="label rotate-180 font-medium tracking-[0.16em] whitespace-nowrap text-highlight-foreground [writing-mode:vertical-rl]">
             {STACK_SPINE}
           </span>
         </div>
-        <div className="flex min-w-0 flex-1 flex-col">
+        <div className="relative flex min-w-0 flex-1 flex-col">
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-y-0 left-2 w-1.5 overflow-hidden"
+          >
+            <div className="stack-pulse relative h-full">
+              <span className="absolute bottom-0 left-0 size-1.5 bg-highlight" />
+            </div>
+          </div>
           {STACK_LAYERS.map((layer, index) => (
             <div key={layer.title} className="flex flex-col">
               <div className="flex flex-col gap-3.5 px-[22px] pt-5 pb-[22px]">
@@ -26,11 +59,14 @@ function StackDiagram() {
                 </div>
                 <ul className="flex flex-wrap gap-2">
                   {layer.items.map((item) => (
-                    <li
-                      key={item}
-                      className="border border-border-strong px-2.5 py-1.5 font-mono text-[13px]"
-                    >
-                      {item}
+                    <li key={item}>
+                      <button
+                        type="button"
+                        data-tech={techKey(item)}
+                        className="cursor-default border border-border-strong px-2.5 py-1.5 font-mono text-[13px] transition-colors hover:border-highlight hover:text-highlight focus:border-highlight focus:text-highlight"
+                      >
+                        {item}
+                      </button>
                     </li>
                   ))}
                 </ul>
@@ -45,8 +81,13 @@ function StackDiagram() {
           ))}
         </div>
       </div>
-      <figcaption className="font-mono text-xs text-subtle-foreground">
-        Fig. 01 — The layers I work across
+      <figcaption className="min-h-10 font-mono text-xs leading-5 text-subtle-foreground">
+        <span className="stack-caption-default">Fig. 01 — The layers I work across</span>
+        {TECH_USAGE.map(({ key, text }) => (
+          <span key={key} data-cap={key} className="text-foreground">
+            {text}
+          </span>
+        ))}
       </figcaption>
     </figure>
   );

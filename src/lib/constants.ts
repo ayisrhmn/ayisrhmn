@@ -36,6 +36,26 @@ export const STACK_LAYERS = [
   },
 ];
 
+// One-line description per stack item, shown in the diagram caption on hover or focus.
+export const STACK_DESCRIPTIONS: Record<string, string> = {
+  React: "A library for building component-based user interfaces.",
+  "Next.js": "A React framework with routing, server rendering, and static generation.",
+  Vue: "A progressive framework for building reactive user interfaces.",
+  Nuxt: "A Vue framework with server rendering and file-based routing.",
+  Ionic: "A toolkit for building cross-platform mobile apps with web technology.",
+  "React Native": "Native iOS and Android apps written with React.",
+  "Node.js": "A JavaScript runtime for servers and tooling.",
+  NestJS: "A structured Node.js framework for scalable server-side applications.",
+  Express: "A minimal, unopinionated web framework for Node.js.",
+  Fastify: "A fast, low-overhead web framework for Node.js.",
+  Go: "A compiled language built for simple, concurrent services.",
+  PostgreSQL: "An open-source relational database with strong SQL support.",
+  MySQL: "A widely used open-source relational database.",
+  MongoDB: "A document database with flexible, JSON-like schemas.",
+  Prisma: "A type-safe ORM and schema toolkit for Node.js and TypeScript.",
+  Sequelize: "A promise-based ORM for SQL databases in Node.js.",
+};
+
 export const FACTS = [
   { label: "Experience", value: "7+ years" },
   { label: "Currently", value: "Full-stack Engineer at Tada" },
