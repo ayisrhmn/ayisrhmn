@@ -129,6 +129,17 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
+    name: "Pasar Cijerah Cerah × SegarKita",
+    tagline: "Belanja Segar, Lebih Mudah!",
+    description:
+      "Online grocery app for Pasar Cijerah Cerah supported by SegarKita — order meat, fish, vegetables, and household needs from the market in one app. Built as a two-person independent project, covering the React Native customer and driver apps, a Next.js admin dashboard, and the NestJS API.",
+    image: "/projects/pasar-cijerah-cerah.webp",
+    tags: ["TypeScript", "React Native", "NestJS", "PostgreSQL"],
+    github: null,
+    demo: "https://play.google.com/store/apps/details?id=com.segarkita.app",
+    host: "play.google.com",
+  },
+  {
     name: "Mager Klip",
     tagline: "Satu Video, Puluhan Klip Viral!",
     description:
